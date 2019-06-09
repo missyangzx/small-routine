@@ -1,0 +1,23 @@
+<!--pages/order/order.wxml-->
+<view class='wrap'>
+  <view class='list'>
+    <view class='news'>
+      <image src='../image/aa3.jpg'></image>
+      <view class='news-box'>
+        <text class='name'>乳胶枕头泰国原装进口颈椎天然橡胶枕</text>
+        <text class='composition'>天然乳胶</text>
+      </view>
+      <view class='price-box'>
+        <text class='price'>￥299.0</text>
+        <text class='count'>x1</text>
+      </view>
+    </view>
+    <view class='describe'>
+      共计1件商品，合计<text>￥299.0</text>（含运费￥0.00）
+    </view>
+    <view class='operate'>
+      <text class='remove'>删除</text>
+      <text class='speak'>评价</text>
+    </view>
+  </view>
+</view>

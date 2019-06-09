@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/mine/mine",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#1ca95e",
+    "navigationBarTitleText": "拼多多",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#1ca95e",
+    "backgroundColor": "#eee",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/image/aa1.jpg",
+        "selectedIconPath": "pages/image/aa2.jpg"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/image/aa1.jpg",
+        "selectedIconPath": "pages/image/aa2.jpg"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

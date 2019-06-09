@@ -1,0 +1,93 @@
+/* pages/order/order.wxss */
+.wrap{
+  width: 750rpx;
+  height: 1334rpx;
+  background: #f2f2f2;
+}
+.list{
+  height: 420rpx;
+  display: flex;
+  flex-direction: column;
+}
+.news{
+  height: 206rpx;
+  background: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.news image{
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 40rpx;
+}
+.news-box{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.name{
+  font-size: 26rpx;
+	line-height: 40rpx;
+	color: #626262;
+}
+.composition,.count{
+  font-size: 22rpx;
+	line-height: 40rpx;
+	color: #bebebe;
+}
+.price-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200rpx;
+}
+.price{
+  font-size: 30rpx;
+	line-height: 70rpx;
+	color: #dc3025;
+  font-weight: bold;
+}
+.describe{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  height: 90rpx;
+  background: #fff;
+  font-size: 30rpx;
+	line-height: 90rpx;
+	color: #8b8b8b;
+  border-bottom: 2rpx solid #eee;
+}
+.describe text{
+  color: #dc3025;
+}
+.operate{
+  height: 100rpx;
+  background: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 20rpx; 
+}
+.operate text{
+  border: 2rpx solid #ccc;
+  height: 56rpx;
+  width: 144rpx;
+  outline: none;
+  border-radius: 28rpx;
+  font-size: 30rpx;
+  color: #aaa8a8;
+  line-height: 56rpx;
+  text-align: center;
+  margin-right: 30rpx;
+}
+.operate text.speak{
+  border: 2rpx solid #1ca95e;
+  color: #1ca95e;
+}

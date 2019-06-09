@@ -1,0 +1,64 @@
+<!--pages/mine/mine.wxml-->
+<view class='top'>
+  <view class='small'>
+    <icon class='iconfont icon-shezhi'></icon>
+    <icon class='iconfont icon-xiaoxix'></icon>
+  </view>
+  <view class='person'>
+    <image src='../image/aa5.jpg'></image>
+    <text>张杰</text>
+  </view>
+</view>
+<view class='list' bindtap="goOrder">
+  <view class='myorder'>
+    <icon class='iconfont icon-dingdan'></icon>
+    <text>我的订单</text>
+  </view>
+  <view class='allorder'>
+    <text>查看全部订单 > </text>
+  </view>
+</view>
+<view class='orderlist'>
+  <view>
+    <icon class='iconfont icon-daifukuan'></icon>
+    <text>待付款</text>
+  </view>
+  <view class='myorder'>
+    <icon class='iconfont icon-biaozhundaifenxiang'></icon>
+    <text>待分享</text>
+  </view>
+  <view class='myorder'>
+    <icon class='iconfont icon-unie63e'></icon>
+    <text>待发货</text>
+  </view>
+  <view class='myorder'>
+    <icon class='iconfont icon-daifahuo'></icon>
+    <text>待收货</text>
+  </view>
+  <view class='myorder'>
+    <icon class='iconfont icon-daipingjia'></icon>
+    <text>待评价</text>
+  </view>
+</view>
+<view class='shoplist'>
+  <view>
+    <icon class='iconfont icon-youhuiquan'></icon>
+    <text>优惠券</text>
+    <icon class='jiantou iconfont icon-youjiantou'></icon>
+  </view>
+  <view class='myorder'>
+    <icon class='iconfont icon-shangpinshoucang'></icon>
+    <text>商品收藏</text>
+    <icon class='jiantou iconfont icon-youjiantou'></icon>
+  </view>
+  <view class='myorder'>
+    <icon class='iconfont icon-lishiliulan'></icon>
+    <text>历史浏览</text>
+    <icon class='jiantou iconfont icon-youjiantou'></icon>
+  </view>
+  <view class='myorder'>
+    <icon class='iconfont icon-tuikuan'></icon>
+    <text>退款售后</text>
+    <icon class='jiantou iconfont icon-youjiantou'></icon>
+  </view>
+</view>

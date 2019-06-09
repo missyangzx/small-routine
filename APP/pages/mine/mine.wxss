@@ -1,0 +1,102 @@
+/* pages/mine/mine.wxss */
+.iconfont{
+  font-size: 40rpx;
+}
+.top{
+  width: 750rpx;
+  height: 250rpx;
+  background: #1ca95e;
+}
+.small{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30rpx 20rpx;
+  height: 40rpx;
+  color: #fff;
+}
+.person{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  color: #fff;
+  font-size: 36rpx;
+}
+.person image{
+  width: 130rpx;
+  height: 130rpx;
+  border: 6rpx solid #fff;
+  border-radius: 50%;
+}
+.list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  color: #747474;
+  fotn-size: 30rpx;
+  height: 100rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.allorder{
+  font-size: 24rpx;
+  color: #ababab;
+}
+.orderlist{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  height: 150rpx;
+  border-bottom: 2rpx solid #eee;
+}
+.orderlist view{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  font-size: 24rpx;
+  color: #919191;
+}
+.shoplist{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.shoplist view{
+  height: 120rpx;
+  line-height: 120rpx;
+  border-bottom: 2rpx solid #eee;
+  font-size: 30rpx;
+  color: #747474;
+}
+.shoplist view icon{
+  margin-right: 20rpx;
+}
+.icon-dingdan{
+  color: #5aa0ff;
+  font-size: 45rpx;
+}
+.icon-youhuiquan{
+  color: #ec3127;
+}
+.icon-shangpinshoucang{
+  color: #ff81ba;
+}
+.icon-lishiliulan{
+  color: #1dd9b8;
+}
+.icon-tuikuan{
+  color: #5aa0ff;
+}
+.jiantou{
+  float: right;
+  font-size: 40rpx;
+  color: #747474;
+}
