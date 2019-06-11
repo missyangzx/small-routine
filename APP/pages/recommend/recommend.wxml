@@ -1,2 +1,15 @@
 <!--pages/recommend/recommend.wxml-->
-<text>pages/recommend/recommend.wxml</text>
+<view class='box'>
+  <text class='newProject'>新品</text>
+  <image src=""></image>
+  <view class="flex-wrp" style="display:flex;flex-direction:row;flex-wrap:wrap;">
+    <view class="flex-item">
+      <image src='../image/aa1.jpg'></image>
+      <text>abcdefg</text>
+      <text>abcdefg</text>
+      <text>￥299</text>
+    </view>
+    <view class="flex-item">2</view>
+    <view class="flex-item">3</view>
+  </view>
+</view>
