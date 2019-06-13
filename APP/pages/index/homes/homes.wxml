@@ -1,0 +1,34 @@
+<!--pages/index/home/home.wxml-->
+<view class="home">
+  <swiper
+    indicator-dots="{{true}}"
+    indicator-color="rgba(255, 255, 255, 0.6)"
+    indicator-active-color="#e02e24"
+    autoplay="{{true}}"
+  >
+    <swiper-item
+      wx:for="{{banners}}"
+      wx:key
+    >
+      <navigator>
+        <image mode="widthFix" src="{{item.imgUrl}}" class="slide-image"/>
+      </navigator>
+    </swiper-item>
+  </swiper>
+
+  <scroll-view class='activities' scroll-x bindscroll="bindscroll">
+    <view class='activities-wrap' style="width: {{activitiesWrapWidth}}">
+      拼团
+    </view>
+  </scroll-view>
+  <import src="/templates/products.wxml" />
+  <view class='goodList'>
+    <template
+    is="homeprod"
+    wx:key
+    wx:for="{{products}}"
+    data="{{item}}"
+  />
+  </view>
+  
+</view>

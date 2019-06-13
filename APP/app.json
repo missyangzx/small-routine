@@ -4,12 +4,16 @@
     "pages/logs/logs",
     "pages/mine/mine",
     "pages/order/order",
+<<<<<<< HEAD
     "pages/recommend/recommend",
     "pages/cart/cart",
     "pages/coupon/coupon",
     "pages/collect/collect",
     "pages/history/history",
     "pages/sale/sale"
+=======
+    "pages/hot/hot"
+>>>>>>> 1e2be32b41f4f3a6ee95449d7d3af794f1f053c2
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -4,12 +4,16 @@
 		"ignore": []
 	},
 	"setting": {
-		"urlCheck": true,
+		"urlCheck": false,
 		"es6": true,
 		"postcss": true,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+<<<<<<< HEAD
+=======
+		"nodeModules": true,
+>>>>>>> 1e2be32b41f4f3a6ee95449d7d3af794f1f053c2
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -18,12 +22,16 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
+<<<<<<< HEAD
 		},
 		"nodeModules": true
+=======
+		}
+>>>>>>> 1e2be32b41f4f3a6ee95449d7d3af794f1f053c2
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-	"appid": "wx56b29cfc9930d7e8",
+	"appid": "wxb260cc2615076a54",
 	"projectname": "APP",
 	"debugOptions": {
 		"hidedInDevtools": []

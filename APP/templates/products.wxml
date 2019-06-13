@@ -1,0 +1,23 @@
+<template name="homeprod">
+  <view class='item'>
+    <view class='item-image'>
+      <image class='image' src="{{item.imgUrl}}"></image>
+    </view>
+    <view class='item-news'>
+      <view class='item-Text'>
+        {{item.goods}}
+      </view>
+      <view class='item-footer'>
+        <text class='price'>
+          <text class='price-Icon'>￥</text>
+          <text class='price-pri'>{{item.price}}</text>
+        </text>
+        <text class='item-sell'>已售{{item.sell}}份</text>
+        <view class='item-headPortrait'>
+          <view class='p p1'></view>
+          <view class='p p2'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
