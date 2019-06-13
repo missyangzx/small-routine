@@ -48,7 +48,20 @@
   color: #df0000;
   line-height: 24rpx;
 }
-
+remove{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+  background: #f7f7f7;
+}
+.icon-shanchu{
+  font-size: 44rpx;
+  opacity: 0.2;
+}
 
 .accountBox{
   position: fixed;
