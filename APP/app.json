@@ -4,24 +4,15 @@
     "pages/logs/logs",
     "pages/mine/mine",
     "pages/order/order",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "pages/recommend/recommend",
     "pages/cart/cart",
-<<<<<<< HEAD
     "pages/coupon/coupon",
     "pages/collect/collect",
     "pages/history/history",
-    "pages/sale/sale"
-=======
-    "pages/hot/hot"
->>>>>>> 1e2be32b41f4f3a6ee95449d7d3af794f1f053c2
-=======
-    "pages/pay/pay"
->>>>>>> bb6a0ec9789b980697882bcf9c7b817628724de2
-=======
+    "pages/sale/sale",
+    "pages/hot/hot",
+    "pages/pay/pay",
     "pages/detail/detail"
->>>>>>> aa5f991e50c0e462c503d3407e1580cf5767fafc
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -32,33 +23,33 @@
   "tabBar": {
     "color": "#999",
     "selectedColor": "#1ca95e",
-    "backgroundColor": "#eee",
+    "backgroundColor": "#fff",
     "borderStyle": "black",
     "position": "bottom",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath": "pages/image/aa1.jpg",
-        "selectedIconPath": "pages/image/aa2.jpg"
+        "iconPath": "pages/image/home.png",
+        "selectedIconPath": "pages/image/home.png"
       },
       {
         "pagePath": "pages/recommend/recommend",
         "text": "推荐",
-        "iconPath": "pages/image/aa3.jpg",
-        "selectedIconPath": "pages/image/aa2.jpg"
+        "iconPath": "pages/image/recommend.png",
+        "selectedIconPath": "pages/image/recommend.png"
       },
       {
         "pagePath": "pages/cart/cart",
         "text": "购物车",
-        "iconPath": "pages/image/aa4.jpg",
-        "selectedIconPath": "pages/image/aa2.jpg"
+        "iconPath": "pages/image/cart.png",
+        "selectedIconPath": "pages/image/cart.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "pages/image/aa5.jpg",
-        "selectedIconPath": "pages/image/aa2.jpg"
+        "iconPath": "pages/image/mine.png",
+        "selectedIconPath": "pages/image/mine.png"
       }
     ]
   },

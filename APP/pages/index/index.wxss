@@ -1,5 +1,4 @@
 /**index.wxss**/
-<<<<<<< HEAD
 .container{
   padding:0;
   background: #f8f8f8;
@@ -109,7 +108,7 @@
   right: 15px;
   z-index: 5;
   background: #0ff;
-=======
+}
 page{
   background: #f2f2f2;
 }
@@ -199,5 +198,4 @@ page{
 .model3 .collageBox{
   height: 99px;
   background: #fff;
->>>>>>> aa5f991e50c0e462c503d3407e1580cf5767fafc
 }
