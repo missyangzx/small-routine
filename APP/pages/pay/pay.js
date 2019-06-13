@@ -5,16 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-    
+    radio: '1'
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-   
+    wx.setNavigationBarTitle({
+      title: '确认订单',
+    })
   },
   onGotUserInfo: function (e) {
     
+  },
+  onChange(event) {
+    this.setData({
+      radio: event.detail
+    });
+  },
+  onClick(event) {
+    const { name } = event.currentTarget.dataset;
+    this.setData({
+      radio: name
+    });
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -22,7 +35,11 @@ Page({
   onReady: function () {
 
   },
-
+  myCoupon(){
+    wx.navigateTo({
+      url: '../coupon/coupon',
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */
