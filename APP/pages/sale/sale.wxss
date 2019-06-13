@@ -1,0 +1,131 @@
+/* pages/sale/sale.wxss */
+.wrap{
+  width: 750rpx;
+  height: 1334rpx;
+  padding: 20rpx;
+  background: #f2f2f2;
+}
+.list{
+  width: 702rpx;
+  height: 470rpx;
+  background: #fff;
+  border-radius: 20rpx;
+}
+.title{
+  box-sizing: border-box;
+  padding: 20rpx 18rpx 0;
+  display: flex;
+  align-items: center;
+}
+.title .icon-yemian{
+  color: #d82020;
+  font-size: 38rpx;
+}
+.title text{
+  font-size: 26rpx;
+  color: #333;
+  padding: 0 20rpx;
+  line-height: 100rpx;
+}
+.title .icon-youdiantou{
+  color: #999;
+  font-size: 24rpx;
+}
+ .news{
+  display: flex;
+  justify-content: space-between;
+  height: 182rpx;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.news image{
+  width: 182rpx;
+  height: 182rpx;
+  display: block;
+  margin-right: 20rpx;
+}
+.news .right{
+  width: 460rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news .right text{
+  flex: 1;
+  font-size: 30rpx;
+  color: #222222;
+}
+.news .right .count{
+  float: right;
+  color: #999;
+  font-size: 24rpx;
+  line-height: 30rpx;
+}
+.news .right .goods{
+  padding: 50rpx 0;
+  color: #333;
+  font-size: 20rpx;
+  line-height: 30rpx;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+.sale{
+  font-size: 20rpx;
+  color: #9c9a9a;
+  line-height: 30rpx;
+}
+.sale icon{
+  color: #d82020;
+  font-size: 30rpx;
+  margin-left: 40rpx;
+}
+.price-box{
+  line-height: 30rpx;
+  font-size: 20rpx;
+  color: #000;
+  padding-right: 40rpx;
+}
+.price-box text{
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+}
+.bottom{
+  background: #fff;
+  height: 96rpx; 
+  box-sizing: border-box;
+  padding-top: 25rpx;
+}
+.detail{
+  display: block;
+  width: 144rpx;
+  height: 56rpx;
+  border: 1px solid #dc3025;
+  text-align: center;
+  line-height: 56rpx;
+  color: #da2015;
+  border-radius: 28rpx;
+  font-size: 26rpx;
+  margin-left: 500rpx;
+}
+.footer{
+  display: flex;
+  height: 50rpx;
+  margin: 100rpx 200rpx;
+}
+.footer text{
+  width: 250rpx;
+  color: #bacdc3;
+  font-size: 30rpx;
+  line-height: 130rpx;
+}
+.footer image{
+  width: 216rpx;
+  height: 100rpx;
+  opacity: 0.3;
+  background-color: #397755;
+}

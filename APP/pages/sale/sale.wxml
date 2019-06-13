@@ -1,19 +1,33 @@
 <!--pages/sale/sale.wxml-->
 <view class='wrap'>
-  <view class='top'>
-    <text class='active'>全部</text>
-    <text>待处理</text>
-  </view>
   <view class='list'>
-    <view class='news'>
-      <image src='../image/aa4.jpg'></image>
-      <text>70棉2018夏韩版新款女高腰a字裙牛仔半身裙中长款裙大摆鱼尾裙</text>
+    <view class='title'>
+      <icon class='iconfont icon-yemian'></icon>
+      <text>neodpillo海外旗舰店</text>
+      <icon class='iconfont icon-youjiantou'></icon>
     </view>
-    <view class="price-box">
-      实付：49.9 退款金额：<text>￥49.9</text>
+    <view class='news'>
+      <image src='../image/2.png'></image>
+      <view class='right'>
+        <text>70棉2018夏韩版新款女高腰a字裙牛仔半身裙中长款裙大摆鱼尾裙<text class='count'>x1</text></text>
+        <text class="goods">共1件商品</text>
+      </view>
+    </view>
+    <view class='price'>
+      <view class='sale'>
+        <icon class='iconfont icon-tuikuan'></icon>
+        仅退款 退款成功
+      </view>
+      <view class="price-box">
+        退款金额：<text>￥299.00</text>
+      </view>
     </view>
     <view class='bottom'>
       <text class='detail'>查看详情</text>
     </view>
+  </view>
+  <view class='footer'>
+    <text>没有更多了</text>
+    <image src='../image/empty.gif'></image>
   </view>
 </view>
