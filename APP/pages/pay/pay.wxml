@@ -1,0 +1,7 @@
+<!--pages/pay/pay.wxml-->
+<view>
+  <view class='box'>
+    <text>请确认收货地址</text>
+    <text>></text>
+  </view>
+</view>

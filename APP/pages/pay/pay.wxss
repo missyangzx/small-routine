@@ -1,0 +1,9 @@
+/* pages/pay/pay.wxss */
+.box{
+  width: 100vw;
+  height: 11vw;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 5vw;
+}

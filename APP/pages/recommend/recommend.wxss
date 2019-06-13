@@ -32,6 +32,12 @@
 	box-shadow: 0vw 0vw 1vw 0vw 
 		rgba(0, 0, 0, 0.06);
 	border-radius: 1vw;
+  position: relative;
+}
+.box>.flex-wrp>.flex-item>van-icon{
+  position: absolute;
+  right: 3vw;
+  top: 3vw;
 }
 .box>.flex-wrp>.flex-item>image{
   display: inline-block;

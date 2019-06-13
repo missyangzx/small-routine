@@ -3,13 +3,13 @@
   <text class='newProject'>新品</text>
   <image src=""></image>
   <view class="flex-wrp" style="display:flex;flex-direction:row;flex-wrap:wrap;">
-    <view class="flex-item">
-      <image src='../image/aa1.jpg'></image>
-      <text>abcdefg</text>
-      <text>abcdefg</text>
-      <text>￥299</text>
+    <view class="flex-item" wx:for='{{json}}' wx:key='index' bindtap='jump'>
+      <image src='{{item.picUrl}}'></image>
+      <text>{{item.name}}</text>
+      <text>{{item.introduce}}</text>
+      <text>￥{{item.pirce}}</text>
+      <van-icon name="star-o" color='black'></van-icon>
     </view>
-    <view class="flex-item">2</view>
-    <view class="flex-item">3</view>
   </view>
 </view>
+
