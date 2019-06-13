@@ -1,21 +1,91 @@
 /**index.wxss**/
-.userinfo {
+page{
+  background: #f2f2f2;
+}
+.slider{
+  width: 100%;
+  height: 330px;
+}
+.slider image{
+  width: 100%;
+  height: 100%;
+}
+.model1{
+  padding: 11px 12px 0 10px;
+  background: #fff;
+}
+.price{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  height: 26px;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.price .priceBox{
+  display: flex;
+  height: 26px;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.price .priceBox .newPric{
+  color:#fa380a;
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
 }
-
-.usermotto {
-  margin-top: 200px;
+.price .priceBox .newPric.num{
+  font-size: 22px;
+  font-weight: 800;
+}
+.seller{
+  display: flex;
+  justify-content: space-between;
+  width: 415rpx;
+  margin-top: 20rpx;
+  padding-bottom: 16rpx;
+  font-size: 14px;
+  color:#666;
+}
+.goodsTitle{
+  height: 40px;
+  font-size: 16px;
+  font-weight: 800;  
+  padding-bottom: 25rpx;
+}
+.serviceCheck{
+  position: relative;
+  width: 100%;
+  height: 38px;
+  font-size: 14px;
+  line-height: 38px;
+  color: #999;
+}
+.serviceCheck .arrow{
+  position: absolute;
+  right: 5px;
+  top:50%;
+  width: 6px;
+  height: 6px;
+  margin-top: -4px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  transform: rotate(45deg);
+}
+.model2{
+  background: #fff;
+  margin-top: 14rpx; 
+  margin-bottom: 14rpx;
+  padding: 0 12px 0 10px;
+}
+.model3{
+  background: #fff;
+  margin-top: 14rpx; 
+  margin-bottom: 14rpx;
+  padding: 31rpx 32rpx 59rpx 26rpx;
+}
+.model3 .collageTitle{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  font-size: 14px;
+} 
+.model3 .collageBox{
+  height: 99px;
+  background: #fff;
 }

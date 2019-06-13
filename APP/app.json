@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/mine/mine",
-    "pages/order/order"
+    "pages/order/order",
+    "pages/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "dark",
