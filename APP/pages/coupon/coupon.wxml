@@ -1,0 +1,45 @@
+<!--pages/coupon/coupon.wxml-->
+<view class='wrap'> 
+  <view class='coupon-center'>
+    <view>
+      <icon class='iconfont icon-youhuiquan'></icon>
+      <text>领券中心</text>
+    </view>
+    <icon class='jiantou iconfont icon-youjiantou'></icon>
+  </view>
+  <view class='coupon'>
+     <view class='coupon-list'>
+      <view class='price'>
+        <text>￥<text class="text">10</text></text>
+        <text>无门槛</text>
+      </view>
+      <view class='news'>
+        <text class='name'>仅限俞兆林德朗专卖店内指定商品使用</text>
+        <text class='time'>2019.6.11-2019.6.13</text>
+      </view>
+      <view class='btn'>立即使用</view>
+    </view>
+    <view class='shopNews'>
+      <image src='../image/aa1.jpg'></image>
+      <text>【47.9元限时抢，抢完恢复49.9元】【一喷即白】小安瓶...</text>
+    </view>
+  </view>
+  <view class='coupon'>
+    <view class='coupon-list'>
+      <view class='price'>
+        <text>￥<text class="text">40</text></text>
+        <text>无门槛</text>
+      </view>
+      <view class='news'>
+        <text class='name'>仅限欧琪美妆专营店店内指定商品使用</text>
+        <text class='time'>2019.6.11-2019.6.13</text>
+      </view>
+      <view class='btn'>立即使用</view>
+    </view>
+    <view class='shopNews'>
+      <image src='../image/aa2.jpg'></image>
+      <text>俞兆林空调被夏凉被单人夏季薄被子双人春秋被学生宿舍...</text>
+    </view>
+  </view>
+</view>
+

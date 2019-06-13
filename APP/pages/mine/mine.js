@@ -14,12 +14,49 @@ Page({
   onLoad: function (options) {
 
   },
+  //跳转到我的订单
   goOrder(){
     wx.navigateTo({
       url: '../order/order',
     })
     wx.setNavigationBarTitle({
       title: '我的订单',
+    })
+  },
+  //跳转到优惠券
+  goCoupon() {
+    wx.navigateTo({
+      url: '../coupon/coupon',
+    })
+    wx.setNavigationBarTitle({
+      title: '我的优惠券',
+    })
+  },
+  //跳转到商品收藏
+  goCollect() {
+    wx.navigateTo({
+      url: '../collect/collect',
+    })
+    wx.setNavigationBarTitle({
+      title: '商品收藏',
+    })
+  },
+  //跳转到历史浏览
+  goHistory() {
+    wx.navigateTo({
+      url: '../history/history',
+    })
+    wx.setNavigationBarTitle({
+      title: '历史浏览',
+    })
+  },
+  //跳转到退款售后
+  goSale() {
+    wx.navigateTo({
+      url: '../sale/sale',
+    })
+    wx.setNavigationBarTitle({
+      title: '退款/售后',
     })
   },
   /**

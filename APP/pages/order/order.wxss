@@ -1,93 +1,105 @@
 /* pages/order/order.wxss */
 .wrap{
-  width: 750rpx;
-  height: 1334rpx;
-  background: #f2f2f2;
+  width: 100%;
 }
-.list{
-  height: 420rpx;
+.wrap .list{
   display: flex;
   flex-direction: column;
+  height: 420rpx;
 }
-.news{
-  height: 206rpx;
-  background: #f7f7f7;
+.wrap .list .indent{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
+  height: 60rpx;
+  font-size: 24rpx;
+  color: #8d8d8d;
+  border-top: 2rpx solid #ccc;
   padding: 20rpx;
+  box-sizing: border-box; 
 }
-.news image{
+.wrap .list .indent text:nth-of-type(2){
+  color: #24ab63;
+}
+.wrap .list .news{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 206rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  background: #f7f7f7;
+}
+.wrap .list .news image{
   width: 160rpx;
   height: 160rpx;
   margin-right: 40rpx;
 }
-.news-box{
-  flex: 1;
+.wrap .list .news .news-box{
   display: flex;
   flex-direction: column;
+  width: 378rpx;
 }
-.name{
+.wrap .list .news .news-box .name{
   font-size: 26rpx;
-	line-height: 40rpx;
-	color: #626262;
+	color: #383a3a;
 }
-.composition,.count{
+.wrap .list .news .news-box .composition,.wrap .list .news .price-box .count{
   font-size: 22rpx;
-	line-height: 40rpx;
 	color: #bebebe;
+  padding-top: 32rpx;
+  box-sizing: border-box;
 }
-.price-box{
+.wrap .list .news .price-box{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 200rpx;
+  justify-content: ss;
+  align-items: flex-end;
 }
-.price{
+.wrap .list .news .price-box .price{
   font-size: 30rpx;
-	line-height: 70rpx;
 	color: #dc3025;
   font-weight: bold;
 }
-.describe{
+.wrap .list .total{
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  box-sizing: border-box;
-  padding: 0 20rpx;
-  height: 90rpx;
-  background: #fff;
-  font-size: 30rpx;
-	line-height: 90rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 24rpx;
 	color: #8b8b8b;
   border-bottom: 2rpx solid #eee;
+  padding-right: 20rpx;
+  box-sizing: border-box;
 }
-.describe text{
+.wrap .list .total text{
   color: #dc3025;
 }
-.operate{
-  height: 100rpx;
-  background: #fff;
+.wrap .list .operate{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  height: 100rpx;
+  background: #fff;
+  padding: 20rpx 20rpx 20rpx 0; 
   box-sizing: border-box;
-  padding: 0 20rpx; 
 }
-.operate text{
-  border: 2rpx solid #ccc;
-  height: 56rpx;
+.wrap .list .operate text{
   width: 144rpx;
-  outline: none;
-  border-radius: 28rpx;
+  height: 56rpx;
   font-size: 30rpx;
   color: #aaa8a8;
   line-height: 56rpx;
   text-align: center;
-  margin-right: 30rpx;
+  border-radius: 28rpx;
+  border: 2rpx solid #ccc;
 }
-.operate text.speak{
-  border: 2rpx solid #1ca95e;
+.wrap .list .operate text.remove{
+  margin-right: 20rpx;
+}
+.wrap .list .operate text.speak{
   color: #1ca95e;
+  border: 2rpx solid #1ca95e;
+ 
 }

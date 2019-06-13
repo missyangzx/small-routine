@@ -1,0 +1,19 @@
+<!--pages/sale/sale.wxml-->
+<view class='wrap'>
+  <view class='top'>
+    <text class='active'>全部</text>
+    <text>待处理</text>
+  </view>
+  <view class='list'>
+    <view class='news'>
+      <image src='../image/aa4.jpg'></image>
+      <text>70棉2018夏韩版新款女高腰a字裙牛仔半身裙中长款裙大摆鱼尾裙</text>
+    </view>
+    <view class="price-box">
+      实付：49.9 退款金额：<text>￥49.9</text>
+    </view>
+    <view class='bottom'>
+      <text class='detail'>查看详情</text>
+    </view>
+  </view>
+</view>

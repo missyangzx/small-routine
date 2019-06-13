@@ -41,22 +41,22 @@
   </view>
 </view>
 <view class='shoplist'>
-  <view>
+  <view bindtap='goCoupon'>
     <icon class='iconfont icon-youhuiquan'></icon>
     <text>优惠券</text>
     <icon class='jiantou iconfont icon-youjiantou'></icon>
   </view>
-  <view class='myorder'>
+  <view class='myorder' bindtap='goCollect'>
     <icon class='iconfont icon-shangpinshoucang'></icon>
     <text>商品收藏</text>
     <icon class='jiantou iconfont icon-youjiantou'></icon>
   </view>
-  <view class='myorder'>
+  <view class='myorder' bindtap='goHistory'>
     <icon class='iconfont icon-lishiliulan'></icon>
     <text>历史浏览</text>
     <icon class='jiantou iconfont icon-youjiantou'></icon>
   </view>
-  <view class='myorder'>
+  <view class='myorder' bindtap='goSale'>
     <icon class='iconfont icon-tuikuan'></icon>
     <text>退款售后</text>
     <icon class='jiantou iconfont icon-youjiantou'></icon>

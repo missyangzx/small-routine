@@ -1,0 +1,21 @@
+<!--pages/collect/collect.wxml-->
+<view class='wrap'>
+  <input placeholder='搜索商品'></input>
+  <view class='collect-list'>
+    <image src='../image/aa3.jpg'></image>
+    <view class='news'>
+      <text>13包103片【拆封退】ADAOFU阿道夫日夜护棉柔卫生巾组合装不侧漏</text>
+      <view class='box'>
+        <text>
+          ￥<text class="price">19.05</text>
+          <text class='sale'>已拼1628件</text>
+        </text>
+        <view>
+          <image src='../image/aa4.jpg'></image>
+          <icon class='iconfont icon-ic_more_normal'></icon>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

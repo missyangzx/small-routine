@@ -1,1 +1,79 @@
 /* pages/cart/cart.wxss */
+.contain{
+  width: 750rpx;
+  height: 1334rpx;
+  background: #eee;
+}
+.goodlist{
+    box-sizing: border-box;
+    padding: 20rpx; 
+}
+.goodBox{
+  height: 300rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goodItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50rpx;
+}
+.goodItem image{
+  width: 180rpx;
+  height: 180rpx;
+  margin-left: -300rpx;
+}
+.description{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: -300rpx;
+}
+.description .title{
+  font-size: 34rpx;
+  color: #333333;
+  line-height: 32rpx;
+}
+.description .color{
+  font-size: 28rpx;
+  color: #afafaf;
+  line-height: 32rpx;
+  margin: 30rpx 0;
+}
+.description .price{
+  font-size: 26rpx;
+  color: #df0000;
+  line-height: 24rpx;
+}
+
+
+.accountBox{
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+checkbox-group:last-child{
+  width: 200rpx;
+  font-size: 30rpx;
+  color: #333333;
+}
+.goAccount{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 300rpx;
+}
+.accountBtn{
+  width: 150rpx;
+  height: 70rpx;
+  background: #dc3025; 
+  font-size: 30rpx;
+  color: #fff;
+  line-height: 70rpx;
+}

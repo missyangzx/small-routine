@@ -1,0 +1,59 @@
+/* pages/collect/collect.wxss */
+.wrap{
+  width: 750rpx;
+  height: 1334rpx;
+  background: #eee;
+  box-sizing: border-box;
+  padding: 20rpx;
+}
+.wrap input{
+  background: #fff;
+  height: 80rpx;
+  border-radius: 15rpx;
+  text-align: center;
+  font-size: 28rpx;
+}
+.collect-list{
+  height: 200rpx;
+  background: #fff;
+  border-bottom: 1px solid #999;
+  display: flex;
+  margin-top: 20rpx;
+}
+.collect-list image{
+  width: 200rpx;
+  height: 200rpx;
+}
+.news{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.news text{
+  color: #000;
+  font-size: 28rpx;
+}
+.news .box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.news .box image{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+}
+.news .box text{
+  color: red;
+}
+.news .box .price{
+  font-size: 35rpx;
+  font-weight: bold;
+  margin-right: 20rpx;
+}
+.news .box .sale{
+  color: #999;
+}
