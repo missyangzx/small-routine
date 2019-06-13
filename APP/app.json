@@ -12,7 +12,8 @@
     "pages/sale/sale",
     "pages/hot/hot",
     "pages/pay/pay",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/couponCenter/couponCenter"
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -16,18 +16,18 @@
       <text class='count'>已拼1151件</text>
       <view class='price'>
         <text>￥<text class='prices'>19.9</text></text>
-        <icon class='iconfont icon-ic_more_normal'></icon>
+        <text style='color: #000;'>广东</text>
       </view>
     </view>
   </view>
   <view class='list'>
-    <image src='../image/aa1.jpg'></image>
+    <image src='../image/2.png'></image>
     <view class='news'>
       <text class='name'>70棉2018夏韩版新款女高腰a字裙牛仔半身裙中长款裙大摆鱼尾裙</text>
       <text class='count'>已拼1151件</text>
       <view class='price'>
         <text>￥<text class='prices'>19.9</text></text>
-        <icon class='iconfont icon-ic_more_normal'></icon>
+        <text style='color: #000;'>上海</text>
       </view>
     </view>
   </view>

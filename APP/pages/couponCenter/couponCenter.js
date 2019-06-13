@@ -1,4 +1,4 @@
-// pages/coupon/coupon.js
+// pages/couponCenter/couponCenter.js
 Page({
 
   /**
@@ -7,14 +7,7 @@ Page({
   data: {
 
   },
-  goCouponCenter(){
-    wx.navigateTo({
-      url: '../couponCenter/couponCenter',
-    })
-    wx.setNavigationBarTitle({
-      title: '领券中心',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

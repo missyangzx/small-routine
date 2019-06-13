@@ -1,0 +1,108 @@
+/* pages/couponCenter/couponCenter.wxss */
+.wrap{
+  width: 750rpx;
+  height: 1334rpx;
+  background: #f7f7f7;
+  box-sizing: border-box;
+  padding: 38rpx; 
+}
+.top{
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #333;
+  font-size: 32rpx;
+  font-weight: 700;
+  display: flex;
+  margin-bottom: 30rpx;
+}
+.top .line{
+  width: 6rpx;
+  height: 54rpx;
+  background: #f75f6a;
+  margin-right: 28rpx;
+}
+.top text{
+  color: #f75f6a;
+}
+.list{
+  height: 208rpx;
+  width: 678rpx;
+  background: #fff;
+  box-shadow: 20rpx 10rpx 50rpx rgba(0,0,0,0.1);
+  display: flex;
+  margin-bottom: 30rpx;
+}
+.left{
+  width: 428rpx;
+  height: 100%;
+  background: -webkit-gradient(linear,left top,right bottom,from(#ff4091), to(#ff9e29));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.left .price{
+  font-szie: 32rpx;
+  color: #fff;
+  line-height: 48rpx; 
+  text-align: center;
+}
+.left .price .num{
+  font-size: 44rpx;
+  margin-right: 20rpx;
+  font-weight: bold;
+}
+.left .collect{
+  font-size: 46rpx;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+.right{
+  width: 242rpx;
+  height: 100%;
+}
+.right text{
+  display: block;
+  width: 190rpx;
+  height: 54rpx;
+  background: #fe002f;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 54rpx;
+  color: #fff;
+  font-size: 36rpx;
+  margin-top: 77rpx;
+  margin-left: 30rpx;
+}
+.reduce{
+  text-align: left;
+  font-size: 36rpx;
+  padding-left: 30rpx;
+  color: #fff; 
+}
+.left-one{
+  background: -webkit-gradient(linear,left top,right bottom,from(#fa7a25), to(#f42c3c));
+}
+.left-two{
+  background: -webkit-gradient(linear,left top,right bottom,from(#ffb100), to(#ffc406));
+}
+.left-three{
+  background: -webkit-gradient(linear,left top,right bottom,from(#febf02), to(#fe0036));
+}
+.footer{
+  display: flex;
+  height: 50rpx;
+  margin: 100rpx 200rpx;
+}
+.footer text{
+  width: 250rpx;
+  color: #bacdc3;
+  font-size: 30rpx;
+  line-height: 130rpx;
+}
+.footer image{
+  width: 216rpx;
+  height: 118rpx;
+  opacity: 0.3;
+  background-color: #397755;
+}

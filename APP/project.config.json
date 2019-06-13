@@ -46,7 +46,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -66,6 +66,13 @@
 					"id": -1,
 					"name": "sale",
 					"pathName": "pages/sale/sale",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "couponCenter",
+					"pathName": "pages/couponCenter/couponCenter",
 					"scene": null
 				}
 			]
