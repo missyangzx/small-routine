@@ -10,14 +10,7 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 		"nodeModules": true,
->>>>>>> 1e2be32b41f4f3a6ee95449d7d3af794f1f053c2
-=======
-		"nodeModules": true,
->>>>>>> bb6a0ec9789b980697882bcf9c7b817628724de2
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -26,29 +19,12 @@
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
-<<<<<<< HEAD
-<<<<<<< HEAD
-		},
-		"nodeModules": true
-=======
-		}
->>>>>>> 1e2be32b41f4f3a6ee95449d7d3af794f1f053c2
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.7.1",
-	"appid": "wxb260cc2615076a54",
-=======
 		}
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-<<<<<<< HEAD
-	"appid": "wxbaf475466fc6c4d1",
->>>>>>> bb6a0ec9789b980697882bcf9c7b817628724de2
-=======
-	"appid": "wxbdc54fe31408e789",
->>>>>>> aa5f991e50c0e462c503d3407e1580cf5767fafc
-	"projectname": "APP",
+	"appid": "wx5f4959080175b652",
+	"projectname": "app",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -64,80 +40,13 @@
 			"current": -1,
 			"list": []
 		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
 		"game": {
 			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
-			"current": 6,
-=======
-			"current": 3,
->>>>>>> bb6a0ec9789b980697882bcf9c7b817628724de2
-			"list": [
-				{
-					"id": -1,
-					"name": "mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "order",
-					"pathName": "pages/order/order",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-<<<<<<< HEAD
-					"name": "coupon",
-					"pathName": "pages/coupon/coupon",
-=======
-					"name": "pay",
-					"pathName": "pages/pay/pay",
->>>>>>> bb6a0ec9789b980697882bcf9c7b817628724de2
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-<<<<<<< HEAD
-					"name": "collect",
-					"pathName": "pages/collect/collect",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "history",
-					"pathName": "pages/history/history",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "sale",
-					"pathName": "pages/sale/sale",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "cart",
-					"pathName": "pages/cart/cart",
-=======
-					"name": "recommend",
-					"pathName": "pages/recommend/recommend",
->>>>>>> bb6a0ec9789b980697882bcf9c7b817628724de2
-					"scene": null
-				}
-			]
+			"current": -1,
+			"list": []
 		}
 	}
 }

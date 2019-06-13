@@ -1,5 +1,5 @@
 <template name="homeprod">
-  <view class='item'>
+  <view class='item' bindtap='godetail'>
     <view class='item-image'>
       <image class='image' src="{{item.imgUrl}}"></image>
     </view>

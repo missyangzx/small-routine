@@ -4,29 +4,20 @@
     "pages/logs/logs",
     "pages/mine/mine",
     "pages/order/order",
-<<<<<<< HEAD
-<<<<<<< HEAD
     "pages/recommend/recommend",
     "pages/cart/cart",
-<<<<<<< HEAD
     "pages/coupon/coupon",
     "pages/collect/collect",
     "pages/history/history",
-    "pages/sale/sale"
-=======
-    "pages/hot/hot"
->>>>>>> 1e2be32b41f4f3a6ee95449d7d3af794f1f053c2
-=======
-    "pages/pay/pay"
->>>>>>> bb6a0ec9789b980697882bcf9c7b817628724de2
-=======
+    "pages/sale/sale",
+    "pages/hot/hot",
+    "pages/pay/pay",
     "pages/detail/detail"
->>>>>>> aa5f991e50c0e462c503d3407e1580cf5767fafc
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#1ca95e",
-    "navigationBarTitleText": "拼多多",
+    "navigationBarTitleText": "智能家居生态馆",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {

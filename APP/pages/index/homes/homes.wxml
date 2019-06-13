@@ -4,9 +4,15 @@
     indicator-dots="{{true}}"
     indicator-color="rgba(255, 255, 255, 0.6)"
     indicator-active-color="#e02e24"
-    autoplay="{{true}}"
+    autoplay="{{false}}"
+    circular="true"
+    previous-margin="24px"
+    next-margin="24px"
+    bindchange="onChange"
+    style="background-image : url({{bgImage.swiper}})"
   >
     <swiper-item
+      class="{{index==current ? 'swiper-active' : ''}}"
       wx:for="{{banners}}"
       wx:key
     >
@@ -14,13 +20,67 @@
         <image mode="widthFix" src="{{item.imgUrl}}" class="slide-image"/>
       </navigator>
     </swiper-item>
+    <van-icon class='swiper-icon next' name="arrow" size="2em" color='#fff' />
+    <van-icon class='swiper-icon prev' name="arrow-left" size="2em" color='#fff' />
   </swiper>
-
-  <scroll-view class='activities' scroll-x bindscroll="bindscroll">
-    <view class='activities-wrap' style="width: {{activitiesWrapWidth}}">
-      拼团
+  <view class='activities'>
+    <view class='activities-bg' style="background-image: url({{bgImage.title}})"></view>
+    <view class='activities-content'>
+      <view class='activities-title'>
+          快来和我拼团吧！
+        <text>!</text>
+      </view>
+      <view class='activitites-goods'>
+        <view class="activtites-goods-image">
+          <image></image>
+        </view>
+        <view class='activtites-item'>
+          <view>双面透气设计双面透气设计双面透气设计双面透气设计</view>
+          <view class='price'>
+            <text class='newPrice'>￥200</text>
+            <text>￥150</text>
+          </view>
+          <view class='timer-activitites'>限时抢购</view>
+        </view>
+      </view>
+      <view class='activitites-Head-portrait'>
+        <view class="portrait {{item.portrait==true ? 'portrait-active' : ''}}" wx:for="{{portrait}}" wx:key>
+          <image></image>
+        </view>
+      </view>
+      <view class='activitites-ren'>仅剩<text class='num'>3</text>人，快来呼唤小伙伴来参加吧！</view>
+      <view class="timeOut">
+        <text class='timeline'></text>
+        <view class='timer-view'>
+          剩余
+          <text class="times">23</text>:<text class="times">00</text>:<text class="times">23</text>结束
+        </view>
+        <text class='timeline'></text>
+      </view>
     </view>
-  </scroll-view>
+    <view class='coupon'>
+      <view class='coupon-content'>
+        <view class='dity-name'>
+          <view class='ditys'>12546</view>
+          <view class='icon'></view>
+        </view>
+        <view class='coupon-title1'>
+          <text>玩趣加购</text>
+          <text>分享有礼</text>
+        </view>
+        <view class='coupon-title2'>
+          <text>先领券</text>
+          <text>在购物</text>
+        </view>
+        <view class='couponList'>
+          <view class='coupon-item' wx:for="{{portraits}}" wx:key>
+            <image></image>
+          </view>
+        </view>
+      </view>
+      
+    </view>
+  </view>
   <import src="/templates/products.wxml" />
   <view class='goodList'>
     <template
