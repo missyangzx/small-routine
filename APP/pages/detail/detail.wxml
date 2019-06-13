@@ -1,0 +1,116 @@
+<!--index.wxml-->
+<view>
+   <swiper autoplay='true' circular='true' class='slider'>
+   <swiper-item>
+    <image src='http://t00img.yangkeduo.com/t05img/images/2018-06-23/480a8acbcaea7450f10adebf5ab094fa.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
+   </swiper-item>
+   <swiper-item>
+    <image src='http://t00img.yangkeduo.com/t02img/images/2018-06-23/259344bf676bc31e2ce662cb5b7ca1ff.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
+   </swiper-item>
+   <swiper-item>
+    <image src='http://t00img.yangkeduo.com/t03img/images/2018-06-23/93431eb7c93508adecb91b770beac606.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
+   </swiper-item>
+  </swiper>
+  <view class='model1'>
+    <view class='goodsTitle'>
+      【东购】 布艺沙发小户型家用转交三人位客厅组合整装简约家具沙发
+    </view>
+    <view class='price'>
+      <view class='priceBox'>
+        <text class='newPric'>￥<text class='newPric num'>118-159</text></text>
+      </view>
+    </view>
+    <view class='seller'>
+      <text>快递：免运费</text>
+      <text class='sellerNum'>已拼3.8万件</text>
+    </view>
+  </view>
+  <view class='Coupon'>
+    <view class='couponBox'>
+      <view><text class='iconfont icon-youhuiquan'></text><text>优惠券</text></view>
+      <view></view>
+    </view>
+    <text class='arrow'></text> 
+  </view>
+  <view class='model2'>
+    <view class='serviceCheck'>
+      <view class='serviceBox'>
+        <text class='service'>极速退款</text>
+        ·
+        <text class='service'>全场包邮</text>
+        ·
+        <text class='service'>7天退换</text>
+        ·
+        <text class='service'>48小时发货</text>
+      </view>
+      <view>
+        <text class='arrow'></text>
+      </view>
+    </view>
+  </view>
+  <view class='model3'>
+    <view class='collageTitle'>
+      <text>4人在拼单，可直接参与</text>
+    </view>
+    <view class='collageBox'>
+      <swiper autoplay='true' circular='true' class='collageBoxItem' vertical='true' display-multiple-items='1'>
+        <swiper-item class='scrollitem'>
+          <view>
+            <text class='image'>头像</text>
+            <text class='name'>名字</text>
+          </view>
+          <view class='settlement'>
+            <view class='discrepancy'>
+              <text>差3人拼成</text>
+              <text>剩余00:00:00:00.0</text>
+            </view> 
+            <button>去拼单</button>
+          </view>
+        </swiper-item>
+        <swiper-item class='scrollitem'>
+          <view>
+            <text class='image'>头像</text>
+            <text class='name'>名字</text>
+          </view>
+          <view class='settlement'>
+            <view class='discrepancy'>
+              <text></text>
+              <text>剩余00:00:00:00.0</text>
+            </view>
+            <button>去拼单</button>
+          </view>
+        </swiper-item>
+        <swiper-item class='scrollitem'>
+          <view>
+            <text class='image'>头像</text>
+            <text class='name'>名字</text>
+          </view>
+          <view class='settlement'>
+            <view class='discrepancy'>
+              <text></text>
+              <text>剩余00:00:00:00.0</text>
+            </view>
+            <button>去拼单</button>
+          </view>
+        </swiper-item>
+        <swiper-item class='scrollitem'>
+          <view>
+            <text class='image'>头像</text>
+            <text class='name'>名字</text>
+          </view>
+          <view class='settlement'>
+            <view class='discrepancy'>
+              <text></text>
+              <text>剩余00:00:00:00.0</text>
+            </view>
+            <button>去拼单</button>
+          </view>
+        </swiper-item>
+      </swiper>
+    </view>
+  </view>
+  <view class='toShoppingCart'>
+    <view class='iconBox'></view>
+    <view></view>
+  </view>
+</view>

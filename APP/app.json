@@ -5,6 +5,7 @@
     "pages/mine/mine",
     "pages/order/order",
 <<<<<<< HEAD
+<<<<<<< HEAD
     "pages/recommend/recommend",
     "pages/cart/cart",
 <<<<<<< HEAD
@@ -18,6 +19,9 @@
 =======
     "pages/pay/pay"
 >>>>>>> bb6a0ec9789b980697882bcf9c7b817628724de2
+=======
+    "pages/detail/detail"
+>>>>>>> aa5f991e50c0e462c503d3407e1580cf5767fafc
   ],
   "window": {
     "backgroundTextStyle": "dark",
