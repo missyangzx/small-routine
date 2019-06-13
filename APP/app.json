@@ -7,6 +7,7 @@
 <<<<<<< HEAD
     "pages/recommend/recommend",
     "pages/cart/cart",
+<<<<<<< HEAD
     "pages/coupon/coupon",
     "pages/collect/collect",
     "pages/history/history",
@@ -14,6 +15,9 @@
 =======
     "pages/hot/hot"
 >>>>>>> 1e2be32b41f4f3a6ee95449d7d3af794f1f053c2
+=======
+    "pages/pay/pay"
+>>>>>>> bb6a0ec9789b980697882bcf9c7b817628724de2
   ],
   "window": {
     "backgroundTextStyle": "dark",

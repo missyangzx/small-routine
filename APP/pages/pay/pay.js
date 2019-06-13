@@ -1,23 +1,20 @@
-// pages/recommend/recommend.js
-import json from '../json/recommend.js'
+// pages/pay/pay.js
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-    json:json
+    
   },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(json)
+   
   },
-  jump(){
-    wx.navigateTo({
-      url: '../pay/pay',
-    })
+  onGotUserInfo: function (e) {
+    
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
