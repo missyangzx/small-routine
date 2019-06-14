@@ -1,59 +1,70 @@
 /* pages/collect/collect.wxss */
-.wrap{
-  width: 750rpx;
-  height: 1334rpx;
-  background: #eee;
+.collection{
+  padding: 20rpx 30rpx 0;
   box-sizing: border-box;
-  padding: 20rpx;
 }
-.wrap input{
-  background: #fff;
-  height: 80rpx;
-  border-radius: 15rpx;
-  text-align: center;
-  font-size: 28rpx;
-}
-.collect-list{
-  height: 200rpx;
-  background: #fff;
-  border-bottom: 1px solid #999;
+.collection .list{
   display: flex;
-  margin-top: 20rpx;
+  height: 259rpx;
+  box-shadow: 0rpx 0rpx 10rpx 0rpx #ccc;
+  padding: 20rpx 0 40rpx 14rpx;
+  box-sizing: border-box;
 }
-.collect-list image{
-  width: 200rpx;
-  height: 200rpx;
+.collection .list image{
+  width: 192rpx;
+  height: 199rpx;
+  margin-right: 16rpx;
+  border-radius: 8rpx;
 }
-.news{
+.collection .list .text{
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  box-sizing: border-box;
-  padding: 0 20rpx;
+  justify-content: center;
+  align-items: flex-start; 
 }
-.news text{
-  color: #000;
-  font-size: 28rpx;
+.collection .list .text .title{
+  font-size: 26rpx;
 }
-.news .box{
+.collection .list .text .reduction{
+  color: #ff3f3f;
+  font-size: 18rpx; 
+  margin-top: 10rpx;
+}
+.collection .list .text .price{
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
+  width: 90%;
+  margin-top: 58rpx;
 }
-.news .box image{
-  width: 40rpx;
-  height: 40rpx;
-  border-radius: 50%;
+.collection .list .text .price .nPrice{
+  color: #ff3f3f;
+  font-size: 24rpx;
+  font-weight: 600;
 }
-.news .box text{
-  color: red;
+.collection .list .text .price .nPrice text{
+  font-size: 36rpx;
 }
-.news .box .price{
-  font-size: 35rpx;
-  font-weight: bold;
-  margin-right: 20rpx;
+.collection .list .text .price .already{
+  color: #b9b9b9;
+  font-size: 22rpx;
+  margin-top: 26rpx;
 }
-.news .box .sale{
-  color: #999;
+.footer{
+  display: flex;
+  height: 50rpx;
+  margin: 100rpx 200rpx;
+}
+.footer text{
+  width: 250rpx;
+  color: #bacdc3;
+  font-size: 30rpx;
+  line-height: 130rpx;
+}
+.footer image{
+  width: 216rpx;
+  height: 100rpx;
+  opacity: 0.3;
+  background-color: #397755;
 }
