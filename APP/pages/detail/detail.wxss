@@ -451,3 +451,6 @@ view,text{
   background: #ffcec9 !important;
   border-color:#ffcec9 !important;
 }
+.van-popup--bottom{
+  overflow: visible !important;
+}
