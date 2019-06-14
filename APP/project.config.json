@@ -11,6 +11,7 @@
 		"newFeature": true,	
 	  "projectname": "small",
 		"coverView": true,
+		"nodeModules": true,
 		"autoAudits": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
@@ -23,9 +24,9 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.1",
-	"appid": "wx56b29cfc9930d7e8",
-	"projectname": "APP",
 	"cloudfunctionTemplateRoot": "",
+	"appid": "wx5f4959080175b652",
+	"projectname": "app",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -39,15 +40,10 @@
 			"current": -1,
 			"list": []
 		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
 		"game": {
 			"list": []
 		},
 		"miniprogram": {
-
 			"current": 0,
 			"list": [
 				{
