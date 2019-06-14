@@ -1,6 +1,5 @@
 {
   "pages": [
-    "pages/detail/detail",
     "pages/index/index",
     "pages/logs/logs",
     "pages/mine/mine",
@@ -12,6 +11,7 @@
     "pages/history/history",
     "pages/sale/sale",
     "pages/hot/hot",
+    "pages/detail/detail",
     "pages/pay/pay"
   ],
   "window": {
