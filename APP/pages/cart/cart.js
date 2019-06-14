@@ -127,11 +127,11 @@ Page({
     wx.setNavigationBarTitle({
       title: '购物车'
     })
-    this.getData()
     wx.getStorage({
       key: "data",
       success: res => {
-        console.log(0)
+        console.log(res.data)
+        this.data.data=res.data
         this.setData({
           data: this.data.data
         })
