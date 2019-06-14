@@ -1,11 +1,26 @@
 // pages/recommend/recommend.js
-import json from '../json/recommend.js'
 Page({
   /**
    * 页面的初始数据
    */
   data: {
-    json:json
+    loadingApp:true,
+    dataes:[]
+  },
+  getData() {
+    wx.request({
+      url: "http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20",
+      header: {
+        "content-type": "application/json"
+      },
+      success: res => {
+        let list = res.data.goods_list;
+        this.setData({
+          dataes: list
+        })
+        console.log(this.data.dataes)
+      }
+    })
   },
 
   /**
@@ -15,6 +30,12 @@ Page({
     wx.setNavigationBarTitle({
       title: '新品',
     })
+    setTimeout(()=>{
+      this.setData({
+        loadingApp: false
+      })
+    },2000)
+    this.getData();
   },
   jump(){
     wx.navigateTo({
