@@ -1,0 +1,25 @@
+<!--pages/detail/add/add.wxml-->
+<view class='addgoods'>
+  <view class='addgoodsBox'>
+    <view class='marque'>
+      <view class='addGoodsImg'>商品图</view>
+      <view class='addGoodsPrice'>
+        <view class='Price'>￥<text>122-133</text></view>
+        <view class='num'>库存2343件</view>
+        <view class='checksize'>请选择 尺码</view>
+      </view>
+      <view class='close'>
+        <text class='iconfont icon-guanbi'></text>
+      </view>
+    </view>
+    <view class='size'>
+      <view class='title'>尺码</view>
+      <view><text class='checkItem'>60*40cm</text> <text class='checkItem'>58*36cm</text></view>
+    </view>
+    <view class='moreMarque'>
+      <view class='title'>颜色</view>
+      <view><text class='checkItem'>白色</text> </view>
+    </view>
+    <button>确定</button>
+  </view>
+</view>
