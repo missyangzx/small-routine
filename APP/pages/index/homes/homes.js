@@ -21,7 +21,52 @@ Component({
     activities: [],
     indicatorLineWidth: '0',
     indicatorMarginLeft: '0',
-    products: []
+    products: [],
+    current: 0,
+    bgImage:{
+      swiper: '../image/zhang-kaiyv-661828-unsplash.jpg',
+      title: '../image/title.png'
+    },
+    portrait:[
+      {
+        name: '12',
+        portrait: true,
+      },
+      {
+        name: '12',
+        portrait: true,
+      },
+      {
+        name: '12',
+        portrait: false,
+      },
+      {
+        name: '12',
+        portrait: false,
+      },
+      {
+        name: '12',
+        portrait: false,
+      }
+    ],
+    portraits: [
+      {
+        name: '12',
+        portrait: true,
+      },
+      {
+        name: '12',
+        portrait: true,
+      },
+      {
+        name: '12',
+        portrait: false,
+      },
+      {
+        name: '12',
+        portrait: false,
+      }
+    ]
   },
   ready: function () {
     let that = this
@@ -47,6 +92,18 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    godetail(){
+      wx.navigateTo({
+        url: '../detail/detail',
+      })
+    },
+    onChange(e){
+      console.log(e)
+      this.setData({
+        current: e.detail.current
+      })
+      console.log(this.data.current)
+    },
     customMethod: function () {
       console.log(this.data.someData.item)
       console.log(this.properties.inner)

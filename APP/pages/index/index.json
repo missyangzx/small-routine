@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "home": "./homes/homes"
+    "home": "./homes/homes",
+    "van-icon": "/miniprogram_npm/vant-weapp/icon/index"
   }
 }

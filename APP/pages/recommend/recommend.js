@@ -12,11 +12,13 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(json)
+    wx.setNavigationBarTitle({
+      title: '新品',
+    })
   },
   jump(){
     wx.navigateTo({
-      url: '../pay/pay',
+      url: '../detail/detail',
     })
   },
   /**

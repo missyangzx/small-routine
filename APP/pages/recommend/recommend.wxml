@@ -1,6 +1,5 @@
 <!--pages/recommend/recommend.wxml-->
 <view class='box'>
-  <text class='newProject'>新品</text>
   <image src=""></image>
   <view class="flex-wrp" style="display:flex;flex-direction:row;flex-wrap:wrap;">
     <view class="flex-item" wx:for='{{json}}' wx:key='index' bindtap='jump'>

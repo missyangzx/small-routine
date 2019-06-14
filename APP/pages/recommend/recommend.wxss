@@ -2,17 +2,6 @@
 .box{
   text-align: center;
 }
-.newProject{
-	width: 9vw;
-	height: 5vw;
-	font-family: MicrosoftYaHei;
-	font-size: 5vw;
-	font-weight: normal;
-	font-stretch: normal;
-	line-height: 4vw;
-	letter-spacing: 0vw;
-	color: #333333;
-}
 .box>image{
 	width: 100vw;
 	height: 45vw;
