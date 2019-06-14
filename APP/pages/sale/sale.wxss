@@ -3,82 +3,129 @@
   width: 750rpx;
   height: 1334rpx;
   padding: 20rpx;
-}
-.top{
-  height: 100rpx;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 1px solid #e8e8e8;
-}
-.top text{
-  padding: 30rpx 0;
-  display: inline-block;
-  font-size: 30rpx;
-  color: #090909;
-}
-.top text.active{
-  color: #c23838;
-  border-bottom: 2px solid #c23838;
+  background: #f2f2f2;
 }
 .list{
-  height: 480rpx;
-  margin: 20rpx 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background: #f4f4f4;
+  width: 702rpx;
+  height: 470rpx;
+  background: #fff;
+  border-radius: 20rpx;
 }
-.news{
+.title{
+  box-sizing: border-box;
+  padding: 20rpx 18rpx 0;
+  display: flex;
+  align-items: center;
+}
+.title .icon-yemian{
+  color: #d82020;
+  font-size: 38rpx;
+}
+.title text{
+  font-size: 26rpx;
+  color: #333;
+  padding: 0 20rpx;
+  line-height: 100rpx;
+}
+.title .icon-youdiantou{
+  color: #999;
+  font-size: 24rpx;
+}
+ .news{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 200rpx;
+  height: 182rpx;
   box-sizing: border-box;
   padding: 0 20rpx;
 }
 .news image{
-  width: 180rpx;
-  height: 180rpx;
+  width: 182rpx;
+  height: 182rpx;
   display: block;
   margin-right: 20rpx;
 }
-.news text{
+.news .right{
+  width: 460rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.news .right text{
   flex: 1;
   font-size: 30rpx;
   color: #222222;
 }
+.news .right .count{
+  float: right;
+  color: #999;
+  font-size: 24rpx;
+  line-height: 30rpx;
+}
+.news .right .goods{
+  padding: 50rpx 0;
+  color: #333;
+  font-size: 20rpx;
+  line-height: 30rpx;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+}
+.sale{
+  font-size: 20rpx;
+  color: #9c9a9a;
+  line-height: 30rpx;
+}
+.sale icon{
+  color: #d82020;
+  font-size: 30rpx;
+  margin-left: 40rpx;
+}
 .price-box{
-  height: 100rpx;
-  background: #fff;
-  text-align: right;
-  line-height: 100rpx;
-  font-size: 28rpx;
+  line-height: 30rpx;
+  font-size: 20rpx;
   color: #000;
   padding-right: 40rpx;
-  border-bottom: 1px solid #f1f1f1;
 }
 .price-box text{
   font-size: 30rpx;
-  color: #bc2b3c;
+  color: #333;
   font-weight: bold;
 }
 .bottom{
   background: #fff;
-  height: 90rpx;
-  margin-top: -52rpx; 
+  height: 96rpx; 
+  box-sizing: border-box;
+  padding-top: 25rpx;
 }
 .detail{
   display: block;
-  width: 120rpx;
-  height: 50rpx;
-  border: 2px solid #bc2b3c;
+  width: 144rpx;
+  height: 56rpx;
+  border: 1px solid #dc3025;
   text-align: center;
-  line-height: 50rpx;
-  color: #bc2b3c;
-  float: right;
-  border-radius: 10rpx;
-  font-size: 28rpx;
-  margin-left: 350rpx;
-  margin-top: 20rpx;
+  line-height: 56rpx;
+  color: #da2015;
+  border-radius: 28rpx;
+  font-size: 26rpx;
+  margin-left: 500rpx;
+}
+.footer{
+  display: flex;
+  height: 50rpx;
+  margin: 100rpx 200rpx;
+}
+.footer text{
+  width: 250rpx;
+  color: #bacdc3;
+  font-size: 30rpx;
+  line-height: 130rpx;
+}
+.footer image{
+  width: 216rpx;
+  height: 100rpx;
+  opacity: 0.3;
+  background-color: #397755;
 }

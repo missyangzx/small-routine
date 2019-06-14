@@ -29,6 +29,7 @@
             </view>
             <view class='remove' wx:if='{{item.checked}}'>
               <icon class='iconfont icon-shanchu'></icon>
+              <text>删除</text>
             </view>
           </view>
         </view>

@@ -1,7 +1,7 @@
 <!--pages/coupon/coupon.wxml-->
 <view class='wrap'> 
   <view class='coupon-center'>
-    <view>
+    <view bindtap='goCouponCenter'>
       <icon class='iconfont icon-youhuiquan'></icon>
       <text>领券中心</text>
     </view>

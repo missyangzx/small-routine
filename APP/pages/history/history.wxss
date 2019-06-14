@@ -1,18 +1,10 @@
 /* pages/history/history.wxss */
-
 .wrap{
   width: 750rpx;
   height: 1334rpx;
   box-sizing: border-box;
-  padding: 20rpx;
-}
-.top{
-  height: 100rpx;
-  text-align: right;
-  color: #818181;
-  font-size: 30rpx;
-  line-height: 100rpx;
-  border-bottom: 1px solid #efefef;
+  padding: 20rpx 0;
+  background: #f2f2f2;
 }
 .list{
   margin: 20rpx 0;
@@ -20,6 +12,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center; 
+  background: #fff;
 }
 .list image{
   width: 200rpx;
@@ -53,4 +46,21 @@
 }
 .news .price .prices{
   font-size: 30rpx;
+}
+.footer{
+  display: flex;
+  height: 50rpx;
+  margin: 100rpx 200rpx;
+}
+.footer text{
+  width: 250rpx;
+  color: #bacdc3;
+  font-size: 30rpx;
+  line-height: 130rpx;
+}
+.footer image{
+  width: 216rpx;
+  height: 100rpx;
+  opacity: 0.3;
+  background-color: #397755;
 }
