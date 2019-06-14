@@ -257,7 +257,7 @@
           <view class='title'>颜色</view>
           <view><text class='checkItem'>白色</text> </view>
         </view>
-        <button>确定</button>
+        <button bindtap='goCart'>确定</button>
       </view>
     </view>
   </van-popup>

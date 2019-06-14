@@ -8,9 +8,7 @@ Page({
   },
   //事件处理函数
   bindViewTap: function () {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
+    
   },
   onLoad: function () {
   },
@@ -24,6 +22,12 @@ Page({
   close(){
     this.setData({
       show:false
+    })
+  },
+  goCart(){
+    console.log(1)
+    wx.navigateTo({
+      url: '../cart/cart'
     })
   }
 })
