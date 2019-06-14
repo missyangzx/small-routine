@@ -201,6 +201,64 @@
   <view class='goodsDetailImgBox'>
     详情图片
   </view>
-  <toSettlement></toSettlement>
-  <add></add>
+  <view>
+    <van-goods-action>
+      <van-goods-action-icon
+        icon="wap-home"
+        text="首页"
+        bind:click="onClickIcon"
+      />
+      <van-goods-action-icon
+        icon="star-o"
+        text="收藏"
+        bind:click="onClickIcon"
+      />
+      <van-goods-action-icon
+        icon="service-o"
+        text="客服"
+        bind:click="onClickIcon"
+      />
+      <van-goods-action-button
+        text="发起拼单"
+        type="warning"
+        bind:click="onClickButton"
+      />
+      <van-goods-action-button
+        text="单独购买"
+        bind:click="onClickButton"
+      />
+    </van-goods-action>
+  </view>
+  <van-popup
+  show="{{ show }}"
+  position="bottom"
+  overlay="{{ true }}"
+  custom-style='overflow:none'
+  class='add'
+>
+    <view class='addgoods'>
+      <view class='addgoodsBox'>
+        <view class='marque'>
+          <view class='addgoodsMsg'>
+            <view class='addGoodsImg'>商品图</view>
+            <view class='addGoodsPrice'>
+              <view class='Price'>￥<text>122-133</text></view>
+              <view class='num'>库存2343件</view>
+              <view class='checksize'>请选择 尺码</view>
+            </view>
+          </view>
+          <van-icon name="close"  class='close' bindtap='close'/>
+        </view>
+        <view class='size'>
+          <view class='title'>尺码</view>
+          <view><text class='checkItem'>60*40cm</text> <text class='checkItem'>58*36cm</text></view>
+        </view>
+        <view class='moreMarque'>
+          <view class='title'>颜色</view>
+          <view><text class='checkItem'>白色</text> </view>
+        </view>
+        <button>确定</button>
+      </view>
+    </view>
+  </van-popup>
 </view>

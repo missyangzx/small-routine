@@ -101,7 +101,9 @@
 .icon-unie63e:before {
   content: "\e602";
 }
-
+.van-popup--bottom{
+  overflow: visible!important;
+}
 .icon-yemian:before {
   content: "\e659";
 }
@@ -121,4 +123,6 @@
 .icon-biaozhundaifenxiang:before {
   content: "\e638";
 }
-
+.collageSheet{
+  background: #ffcec9;
+}
