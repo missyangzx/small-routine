@@ -44,12 +44,11 @@
     <view class='shoppingBottom'>
       <view class='shoppingLeft'>
         <!-- 全选 -->
-        <van-checkbox value="{{checked}}" checked-color="#07c160" bind:change="change">全选</van-checkbox>
-        <!-- <text class='text'>全选</text> -->
+        <van-checkbox value="{{checked}}" checked-color="#07c160" bind:change="change" class='checkbox'>全选</van-checkbox>
       </view>
       <view class='shoppingRight'>
         <text class='TotalCost'>￥{{totalPrice}}</text>
-        <button class='Settlement' bindtap="Settlement">去结算</button>
+        <button class='Settlement' bindtap="goPay">去结算</button>
       </view>
     </view>
   </view>

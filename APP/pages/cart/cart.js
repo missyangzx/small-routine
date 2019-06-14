@@ -7,7 +7,7 @@ Page({
   data: {
     isShow: true,
     data: [],
-    totalPrice: 0,
+    totalPrice: "00.00",
     checked: false,
     icon: {
       normal: '//img.yzcdn.cn/icon-normal.png',
@@ -38,7 +38,7 @@ Page({
           data: list
         })
       }
-    })
+    }) 
   },
   //++
   add(e) {
@@ -119,6 +119,17 @@ Page({
         }
       }
     })
+  },
+  //跳转到结算页面
+  goPay(){
+    if (this.data.totalPrice!=="00.00"){
+      wx.navigateTo({
+        url: '../pay/pay',
+      })
+      wx.setNavigationBarTitle({
+        title: '确认订单',
+      })
+    }
   },
   // /**
   //  * 生命周期函数--监听页面加载

@@ -35,11 +35,14 @@ Page({
   onReady: function () {
 
   },
+  //跳转到优惠券
   myCoupon(){
     wx.navigateTo({
       url: '../coupon/coupon',
     })
   },
+  //点击出现支付弹框
+  
   /**
    * 生命周期函数--监听页面显示
    */

@@ -19,7 +19,8 @@
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#1ca95e",
     "navigationBarTitleText": "智能家居生态馆",
-    "navigationBarTextStyle": "white"
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "color": "#999",
@@ -36,7 +37,7 @@
       },
       {
         "pagePath": "pages/recommend/recommend",
-        "text": "推荐",
+        "text": "新品",
         "iconPath": "pages/image/recommend.png",
         "selectedIconPath": "pages/image/recommend.png"
       },

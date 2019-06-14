@@ -27,7 +27,7 @@ Page({
   goCart(){
     console.log(1)
     wx.navigateTo({
-      url: '../cart/cart'
+      url: '../pay/pay'
     })
   }
 })
