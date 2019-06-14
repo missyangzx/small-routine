@@ -1,1 +1,456 @@
 /* pages/detail/detail.wxss */
+@font-face {
+  font-family: 'iconfont';  /* project id 1241745 */
+  src: url('//at.alicdn.com/t/font_1241745_kllruca2f1n.eot');
+  src: url('//at.alicdn.com/t/font_1241745_kllruca2f1n.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1241745_kllruca2f1n.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1241745_kllruca2f1n.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1241745_kllruca2f1n.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1241745_kllruca2f1n.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fenxiang:before {
+  content: "\e617";
+}
+page{
+  background: #f2f2f2;
+}
+.slider{
+  width: 100%;
+  height: 330px;
+}
+.slider image{
+  width: 100%;
+  height: 100%;
+}
+.model1{
+  padding: 11px 12px 0 10px;
+  background: #fff;
+}
+.price{
+  display: flex;
+  justify-content: space-between;
+  height: 26px;
+}
+.price .priceBox{
+  display: flex;
+  height: 26px;
+}
+.price .priceBox .newPric{
+  color:#fa380a;
+  height: 26px;
+  line-height: 26px;
+  font-size: 14px;
+}
+.price .priceBox .newPric.num{
+  font-size: 22px;
+  font-weight: 800;
+}
+.seller{
+  display: flex;
+  justify-content: space-between;
+  width: 415rpx;
+  margin-top: 20rpx;
+  padding-bottom: 16rpx;
+  font-size: 14px;
+  color:#666;
+}
+.goodsTitle{
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  font-size: 16px;
+  padding-bottom: 25rpx;
+}
+.goodsTitle .title{
+  font-weight: 800;  
+  width: 554rpx; 
+}
+.goodsTitle .share{
+  font-weight: 400;
+  font-size: 19rpx;
+  color: #0e0e0e;
+  text-align: center;
+}
+.goodsTitle .share .iconfont{
+  font-size: 47rpx;
+}
+.Coupon{
+  position: relative;
+  background: #fff;
+  margin-top: 15rpx;
+  padding:22rpx 47rpx 28rpx 25rpx;
+}
+.Coupon .couponItem{
+  font-size: 25rpx;
+  margin-left: 11rpx;
+}
+.Coupon .couponBox .couponIcon{
+  color:#ff3000;
+}
+.Coupon .arrow{
+  position: absolute;
+  right: 48rpx;
+  top:50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  transform: rotate(45deg);
+}
+.serviceCheck{
+  position: relative;
+  width: 100%;
+  height: 38px;
+  font-size: 14px;
+  line-height: 38px;
+  color: #999;
+}
+.serviceCheck .arrow{
+  position: absolute;
+  right: 27rpx;
+  top:50%;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  transform: rotate(45deg);
+}
+.model2{
+  background: #fff;
+  margin-top: 14rpx; 
+  margin-bottom: 14rpx;
+  padding: 0 12px 0 10px;
+}
+.model3{
+  box-sizing: border-box;
+  height: 99px;
+  margin-top: 14rpx; 
+  margin-bottom: 14rpx;
+  padding: 31rpx 32rpx 59rpx 26rpx;
+  background: #fff;
+}
+.model3 .collageTitle{
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-bottom: 23rpx;
+} 
+.model3 .collageBox{
+  background: #fff;
+}
+.model3 .collageBox .collageBoxItem{
+  height: 60px;
+}
+.model3 .collageBox .scrollitem{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17rpx;
+  box-sizing: border-box;
+}
+.model3 .collageBox .scrollitem .user{
+  display: flex;
+}
+.model3 .collageBox .scrollitem .image{
+  width: 71rpx;
+  height: 71rpx;
+  font-size: 25rpx;
+  line-height: 71rpx;
+  background:#666;
+  border-radius:50%;
+  margin-right: 21rpx;
+}
+.model3 .collageBox .scrollitem .name{
+  font-size: 25rpx;
+}
+.model3 .collageBox .scrollitem .settlement{
+  display: flex;
+}
+.model3 .collageBox .scrollitem .settlement .discrepancy{
+  text-align: center;
+  margin-right: 44rpx;
+}
+.model3 .collageBox .scrollitem .settlement .peopleNum{
+  font-size: 26rpx;
+  font-weight: 800;
+}
+.model3 .collageBox .scrollitem .settlement .time{
+  font-size: 18rpx;
+}
+.model3 .collageBox .scrollitem .settlement button{
+  width: 135rpx;
+  height: 59rpx;
+  font-size: 34rpx;
+  color: #fff;
+  background:#fb3609;
+  line-height: 59rpx;
+  padding: 0;
+}
+.appraise{
+  margin-top: 18rpx;
+  background:#fff;
+}
+.appraise .appraiseTitle{
+  display: flex;
+  justify-content: space-between;
+  padding: 39rpx 33rpx 13rpx 24rpx;
+  font-size: 34rpx;
+  position: relative;
+}
+.appraise .appraiseTitle .more{
+  color: #b1b1b1; 
+  margin-right: 12px;
+}
+.appraise .appraiseTitle .more .arrow{
+  position: absolute;
+  right: 33rpx;
+  top:50%; 
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #999;
+  border-right: 2px solid #999;
+  transform: rotate(45deg);
+}
+.appraise .appraiseNav .nav{
+  display: inline-block;
+  height: 49rpx;
+  border-radius: 25rpx;
+  background: #fcd8d1;
+  padding: 0 13rpx;
+  font-size: 14px;
+  line-height: 49rpx;
+  margin-top: 23rpx; 
+  margin-left: 27rpx;
+}
+.appraise .appraiseNav .nav .num{
+  font-size: 12px;  
+}
+.appraise .appraiseItem{
+  padding: 23rpx 28rpx 27rpx 23rpx;
+  border-bottom: 17rpx solid #f2f6f5;
+}
+.appraise .appraiseItem .appraiseUser{
+  display: flex;
+  height: 56rpx;
+  line-height: 56rpx;
+  font-size: 25rpx;
+}
+.appraise .appraiseItem .appraiseUser .image{
+  width: 56rpx;
+  height: 56rpx;
+  background:#999;
+  border-radius: 28rpx;
+  margin-right: 19rpx;
+}
+.appraise .appraiseItem .appraiseUser{
+  margin-bottom: 24rpx;
+}
+.appraise .appraiseItem .appriaseContent{
+  font-size: 30rpx;
+}
+.appraise .appraiseItem .appriaseImage{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16rpx;
+}
+.appraise .appraiseItem .appriaseImage text{
+  width: 210rpx;
+  height: 210rpx;
+  background:#999;
+  text-align:center;
+  line-height: 210rpx;
+}
+.appraise .appraiseMore{
+  position: relative;
+  text-align: center;
+  height: 78rpx;
+  line-height: 78rpx;
+  font-size: 29rpx;
+  color: #b1b1b1; 
+}
+.appraise .appraiseMore .arrow{
+  position: absolute;
+  right: 50%;
+  top:50%; 
+  width: 10px;
+  height: 10px;
+  margin-top: -10px;
+  margin-right: -44px;
+  border-right: 2px solid #999;
+  border-bottom: 2px solid #999;
+  transform: rotate(45deg);
+}
+.goodsDetail{
+  background: #fff;
+  margin-top: 10rpx;
+}
+.goodsDetail .detailTitle{
+  height: 100rpx;
+  line-height: 100rpx;
+  text-indent: 19rpx;
+  font-size: 34rpx; 
+}
+.goodsDetail .detailGoods{
+  display: flex;
+  justify-content: space-around;
+  flex-flow:row wrap;
+  background: #eeeeee;  
+}
+.goodsDetail .detailGoods .goods{
+  width: 230rpx;
+  height: 340rpx;
+  margin: 12rpx 0;
+  background: #fff; 
+}
+.goodsDetail .detailGoods .goods .goodsImg{
+  width: 230rpx;
+  height: 260rpx;
+  background: #ccc;
+}
+.goodsDetail .detailGoods .goods .goodsMsg view{
+  margin: 0;
+  padding: 0;
+}
+.goodsDetail .detailGoods .goods .goodsMsg .goodsTitle{
+  height: 42rpx;
+  line-height: 42rpx;
+  font-size: 18rpx;
+  text-align: center;
+}
+.goodsDetail .detailGoods .goods .goodsMsg .goodsShop{
+  font-size: 16rpx; 
+  text-align: center;
+}
+.goodsDetail .detailGoods .goods .goodsMsg .goodsShop .goodsPrice{
+  margin: 0 12rpx;
+  font-size: 10rpx;
+  color: #dd2700;
+}
+.goodsDetail .detailGoods .goods .goodsMsg .goodsShop .goodsPrice .num{
+  font-size: 16rpx;
+}
+.goodsDetail .detailGoods .goods .goodsMsg .goodsShop button{
+  display: inline-block;
+  width: 75rpx;
+  height: 23rpx;
+  color:#fff;
+  background:#dd2700;
+  border-radius:4px;
+  font-size: 10rpx;
+  padding: 0;
+}
+.goodsDetailImgBox{
+  background: #fff;
+}
+view,text{
+  margin: 0;
+  padding: 0;
+}
+.addgoods .addgoodsBox{
+  width: 100%;
+  background: #fff;
+}
+.addgoods .addgoodsBox .marque{
+  display: flex;
+  justify-content: space-between;
+  font-size: 29rpx;
+  font-weight: bold;
+}
+.addgoods .addgoodsBox .marque .addgoodsMsg{
+  display: flex;
+}
+.addgoods .addgoodsBox .marque .close{
+  font-size: 50rpx;
+  margin-right: 25rpx;
+  margin-top: 15rpx;
+}
+.addgoods .addgoodsBox .marque view{
+  margin: 0;
+  padding: 0;
+}
+.addgoods .addgoodsBox .marque .addGoodsImg{
+  width: 224rpx;
+  height: 224rpx;
+  text-align: center;
+  line-height: 224rpx;
+  background: #ccc;
+  border:9rpx solid #fff;
+  border-radius: 13rpx;
+  transform: translate(42rpx,-70rpx);
+  margin-right: 83rpx;
+  box-shadow: 9px -1px 7px 2px rgba(122, 122, 122, 0.11);
+}
+.addgoods .addgoodsBox .marque .Price{
+  color:#d60e15;
+  margin-top: 37rpx;
+}
+.addgoods .addgoodsBox .marque .num{
+  margin:11rpx 0;
+}
+.size{
+  font-size: 32rpx;
+  padding-left: 55rpx;
+  margin-top: -18px;
+}
+.size .title{
+  margin-bottom: 34rpx;
+}
+.size .checkItem{
+  display: inline-block;
+  height: 22rpx;
+  padding: 10rpx 34rpx;
+  background: #bfbfbf;
+  border-radius: 14px;
+  margin-right: 53rpx;
+  font-size: 23rpx;
+  line-height: 22rpx;
+}
+.moreMarque{
+  height: 300rpx;
+  font-size: 32rpx;
+  padding-left: 55rpx;
+  padding-top: 15rpx;
+  margin-top: 35rpx;
+}
+.moreMarque .title{
+  margin-bottom: 34rpx;
+}
+.moreMarque .checkItem{
+  display: inline-block;
+  height: 22rpx;
+  padding: 10rpx 34rpx;
+  background: #bfbfbf;
+  border-radius: 14px;
+  margin-right: 53rpx;
+  font-size: 23rpx;
+  line-height: 22rpx;
+}
+.addgoods .addgoodsBox button{
+  height: 95rpx;
+  line-height: 95rpx;
+  text-align: center;
+  padding: 0;
+  font-size: 35rpx;
+  color:#fff;
+  background: #fb3609;
+  border-radius: 0;
+  outline: none;
+  border:0;
+}
+.van-button--warning{
+  background: #ffcec9 !important;
+  border-color:#ffcec9 !important;
+}
+.van-popup--bottom{
+  overflow: visible !important;
+}

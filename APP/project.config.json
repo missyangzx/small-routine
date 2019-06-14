@@ -8,6 +8,7 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
+<<<<<<< HEAD
 		"newFeature": true,	
 	  "projectname": "small",
 		"coverView": true,
@@ -27,6 +28,15 @@
 	"cloudfunctionTemplateRoot": "",
 	"appid": "wx5f4959080175b652",
 	"projectname": "app",
+=======
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.1",
+	"appid": "wxbdc54fe31408e789",
+	"projectname": "miniprogram-test-1",
+>>>>>>> 55cad499d02b8e69dd411eccf15bce44a0634d2e
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -46,6 +56,7 @@
 			"list": []
 		},
 		"miniprogram": {
+<<<<<<< HEAD
 			"current": 0,
 			"list": [
 				{
@@ -89,6 +100,10 @@
 					"scene": null
 				}
 			]
+=======
+			"current": -1,
+			"list": []
+>>>>>>> 55cad499d02b8e69dd411eccf15bce44a0634d2e
 		}
 	}
 }
