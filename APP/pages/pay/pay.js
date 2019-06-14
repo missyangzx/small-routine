@@ -9,7 +9,6 @@ Page({
     show: false
   },
   onClose() {
-    console.log(1);
     this.setData({ show: false });
   },
   onSubmit(){

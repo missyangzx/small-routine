@@ -109,5 +109,10 @@ Page({
         isShow: false
       })
     }
+  },
+  goPay(){
+    wx.navigateTo({
+      url: '../pay/pay',
+    })
   }
 })

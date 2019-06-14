@@ -42,7 +42,7 @@
       </checkbox-group>
       <view class='goAccount'>
         <text>￥{{totalPrice}}.00</text>
-        <button class='accountBtn'>去结算</button>
+        <button class='accountBtn' bindtap='goPay'>去结算</button>
       </view>
     </view>
   </view>
