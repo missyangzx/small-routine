@@ -220,12 +220,16 @@ swiper-item > navigator > image{
   width:100%;
 }
 .hot-content{
+  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width:100%;
+  padding-top: 40px; 
   background-repeat: no-repeat;
-  background-size: 350%;
-  background-position: 0px;
+  background-origin: padding-box;
+  background-size: 100% 171%;
+  background-position: 0px -298px;
 }
 .hot-title{
   box-sizing: border-box;
@@ -233,8 +237,12 @@ swiper-item > navigator > image{
   height: 105rpx;
   border: 2rpx solid #8a907f;
   border-bottom: none;
+  background: #fff;
 }
 .hot-title1{
+  display: flex;
+  justify-content: center;
+  width: 100%;
   height: 28rpx;
   margin-bottom: 22rpx;
 }
@@ -245,6 +253,96 @@ swiper-item > navigator > image{
   font-weight: 400;
   color: #9a9a9a;
   margin-bottom: 40rpx;
+}
+.hot-image{
+  position: relative;
+  box-sizing: border-box;
+  width:100%;
+  height: 512rpx;
+  border: 1px solid #ccc;
+  margin: 0 32rpx;
+}
+.purchase{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 224rpx;
+  height: 116rpx;
+  border: 1rpx solid red;
+}
+.purchase-price{
+  display: flex;
+  align-items: center;
+  color: red;
+  font-size: 24rpx;
+}
+.purchase-price .price{
+  font-size: 32rpx;
+}
+.purchase-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(221,0,2);
+  width: 150rpx;
+  height: 46rpx;
+  font-size: 24rpx;
+  color: #fff;
+}
+.hot-image1{
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 585rpx;
+  margin-bottom: 56rpx;
+}
+.hot-image1s{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 368rpx;
+}
+.hot-image1s .max-image{
+  box-sizing: border-box;
+  width: 437rpx;
+  height: 368rpx;
+  margin-right: 24rpx;
+  border: 1px solid #ccc; 
+}
+.hot-image1s .min-image{
+  display: flex;
+  flex-wrap: wrap;
+}
+.hot-image1s .min-image .image{
+  width: 207rpx;
+  height: 176rpx;
+  border: 1px solid red;
+}
+.hot-image2{
+  width: 100%;
+}
+.hot-image2 .hot-image{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 221rpx;
+  margin: 0;
+  margin-top: 100rpx;
+  margin-bottom: 119rpx;  
+  border: 1px solid red;
+}
+.hot-item{
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 15rpx;
+}
+.hot-item .item{
+  width: 343rpx;
 }
 /* hot1结束 */
 /* 商品列表开始 */

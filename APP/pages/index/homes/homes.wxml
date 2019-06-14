@@ -83,7 +83,7 @@
   <view class='hot-goods'>
     <view class='hot-content' style="background-image: url({{bgImage.title}})">
       <view class='hot-title'>
-      
+        1235
       </view>
       <view class='hot-title1'>
         <view class='ditys'>12546</view>
@@ -94,14 +94,71 @@
       </view>
       <view class='hot-image'>
         <image></image>
+        <view class='purchase'>
+          <view class='purchase-price'>
+            <text></text>
+            <text>￥</text>
+            <text class='price'>288</text>
+            <text>.00</text>
+          </view>
+          <view class='purchase-btn'>
+            <text>立即购买</text>
+            <text></text>
+          </view>
+        </view>
       </view>
-      <view class='purchase'>
-        <view class='purchase-price'></view>
-        <view class='purchase-btn'></view>
+      <view class='hot-image1'>
+        <view class='hot-image1s'>
+          <view class='max-image'>
+            <image></image>
+          </view>
+          <view class="min-image">
+            <view class='title1'>11124849656</view>
+            <view clalss="title2">12151654989</view>
+            <image class='image'></image>
+            <view class='purchases'>
+              <view class='purchase-price'>
+                <text></text>
+                <text>￥</text>
+                <text class='price'>288</text>
+                <text>.00</text>
+              </view>
+              <view class='purchase-btn'>
+                <text>立即购买</text>
+                <text></text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='hot-image2'>
+        <view class='hot-image2-top'>
+          <view class='hot-title1'>
+            <view class='ditys'>12546</view>
+            <view class='icon'></view>
+          </view>
+          <view class='hot-title2'>
+            太少的话是
+          </view>
+          <view class='hot-image'>
+            <image></image>
+          </view>
+        </view>
+        <view class='hot-item'>
+          <view class='item'>
+            <view>1264898489</view>
+            <view>
+              <image></image>
+            </view>
+            <view></view>
+          </view>
+          <view class='item'></view>
+        </view>
       </view>
     </view>
   </view>
   <import src="/templates/products.wxml" />
+  <import src="/templates/purchases.wxml" />
   <view class='goodList'>
     <template
     is="homeprod"
