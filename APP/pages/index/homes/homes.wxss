@@ -47,6 +47,7 @@ swiper-item > navigator > image{
   overflow: hidden;
   margin-bottom: 103rpx;
   background: #fff;
+  height: 1315rpx;
 }
 .activities-bg{
   width: 100%;
@@ -56,7 +57,6 @@ swiper-item > navigator > image{
   background-position: 0px;
 }
 .activities-content{
-  float: left;
   transform: translateY(-256rpx);
   display: flex;
   flex-wrap: wrap;
@@ -161,6 +161,7 @@ swiper-item > navigator > image{
 .coupon-content{
   display: flex;
   width: 100%;
+  transform: translateY(-256rpx);
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -214,7 +215,38 @@ swiper-item > navigator > image{
   border: 2rpx solid red;
 }
 /* 优惠券结束 */
-
+/* hot1开始 */
+.hot-goods{
+  width:100%;
+}
+.hot-content{
+  display: flex;
+  justify-content: center;
+  width:100%;
+  background-repeat: no-repeat;
+  background-size: 350%;
+  background-position: 0px;
+}
+.hot-title{
+  box-sizing: border-box;
+  width:614rpx;
+  height: 105rpx;
+  border: 2rpx solid #8a907f;
+  border-bottom: none;
+}
+.hot-title1{
+  height: 28rpx;
+  margin-bottom: 22rpx;
+}
+.hot-title2{
+  width: 100%;
+  text-align: center;
+  font-size: 36rpx;
+  font-weight: 400;
+  color: #9a9a9a;
+  margin-bottom: 40rpx;
+}
+/* hot1结束 */
 /* 商品列表开始 */
 
 .goodList{

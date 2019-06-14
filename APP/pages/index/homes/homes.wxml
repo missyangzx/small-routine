@@ -78,7 +78,27 @@
           </view>
         </view>
       </view>
+    </view>
+  </view>
+  <view class='hot-goods'>
+    <view class='hot-content' style="background-image: url({{bgImage.title}})">
+      <view class='hot-title'>
       
+      </view>
+      <view class='hot-title1'>
+        <view class='ditys'>12546</view>
+        <view class='icon'></view>
+      </view>
+      <view class='hot-title2'>
+        太少的话是
+      </view>
+      <view class='hot-image'>
+        <image></image>
+      </view>
+      <view class='purchase'>
+        <view class='purchase-price'></view>
+        <view class='purchase-btn'></view>
+      </view>
     </view>
   </view>
   <import src="/templates/products.wxml" />
