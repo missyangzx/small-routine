@@ -8,27 +8,6 @@
 		"es6": true,
 		"postcss": true,
 		"minified": true,
-<<<<<<< HEAD
-		"newFeature": true,	
-	  "projectname": "small",
-		"coverView": true,
-		"nodeModules": true,
-		"autoAudits": false,
-		"checkInvalidKey": true,
-		"checkSiteMap": true,
-		"uploadWithSourceMap": true,
-		"babelSetting": {
-			"ignore": [],
-			"disablePlugins": [],
-			"outputPath": ""
-		}
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.7.1",
-	"cloudfunctionTemplateRoot": "",
-	"appid": "wx5f4959080175b652",
-	"projectname": "app",
-=======
 		"newFeature": true,
 		"autoAudits": false
 	},
@@ -36,11 +15,12 @@
 	"libVersion": "2.7.1",
 	"appid": "wxbdc54fe31408e789",
 	"projectname": "miniprogram-test-1",
->>>>>>> 55cad499d02b8e69dd411eccf15bce44a0634d2e
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"scripts": {},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -51,57 +31,12 @@
 			"list": []
 		},
 		"game": {
+			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
-<<<<<<< HEAD
-			"current": 0,
-			"list": [
-				{
-					"id": -1,
-					"name": "pay",
-					"pathName": "pages/pay/pay",
-			    "current": 4,
-        },
-				{
-					"id": -1,
-					"name": "mine",
-					"pathName": "pages/mine/mine",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "order",
-					"pathName": "pages/order/order",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "sale",
-					"pathName": "pages/sale/sale",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "couponCenter",
-					"pathName": "pages/couponCenter/couponCenter",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "cart",
-					"pathName": "pages/cart/cart",
-					"scene": null
-				}
-			]
-=======
 			"current": -1,
 			"list": []
->>>>>>> 55cad499d02b8e69dd411eccf15bce44a0634d2e
 		}
 	}
 }

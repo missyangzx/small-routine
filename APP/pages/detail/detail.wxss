@@ -22,6 +22,29 @@
 page{
   background: #f2f2f2;
 }
+.sliderImg{
+  position: relative;
+}
+.sliderImg .ImgBtn{
+  position: absolute;
+  bottom: 44rpx;
+  width: 100%;
+  text-align: center;
+}
+.sliderImg .ImgBtn text{
+  display: inline-block;
+  width: 89rpx;
+  height: 47rpx;
+  border-radius: 17rpx;
+  margin: 0 19rpx;
+  background:#ffffff;
+  font-size: 30rpx;
+  color: #303030;
+}
+.sliderImg .ImgBtn text.active{
+  background: #ff3000;
+  color: #ffffff;
+}
 .slider{
   width: 100%;
   height: 330px;
@@ -132,12 +155,40 @@ page{
   padding: 0 12px 0 10px;
 }
 .model3{
+  position: relative;
   box-sizing: border-box;
   height: 99px;
   margin-top: 14rpx; 
   margin-bottom: 14rpx;
   padding: 31rpx 32rpx 59rpx 26rpx;
   background: #fff;
+}
+.model3 .success{
+  position: absolute;
+  box-sizing: border-box;
+  display:flex;
+  bottom: 80rpx;
+  left:27rpx;
+  width: 433rpx;
+	height: 65rpx;
+  padding: 8rpx 7rpx;
+  line-height: 49rpx;
+  font-size:23rpx; 
+  background-color: #383838;
+	border-radius: 12rpx;
+	opacity: 0.71;
+  color: #fff;
+  z-index: 1;
+}
+.model3 .success .image{
+  width: 48rpx;
+  height:48rpx;
+  border-radius: 24rpx;
+  margin-right: 4rpx;
+  background: #fff;
+}
+.model3 .success .name{
+  margin-right: 8rpx;
 }
 .model3 .collageTitle{
   display: flex;
@@ -453,4 +504,9 @@ view,text{
 }
 .van-popup--bottom{
   overflow: visible !important;
+}
+.bottomNav{
+  position: fixed;
+  bottom: 0;
+  z-index: 9999;
 }
