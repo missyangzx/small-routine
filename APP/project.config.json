@@ -29,6 +29,7 @@
 		"hidedInDevtools": []
 	},
 	"scripts": {},
+	"isGameTourist": false,
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
 	"condition": {
@@ -45,6 +46,7 @@
 			"list": []
 		},
 		"game": {
+			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {
