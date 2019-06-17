@@ -3,7 +3,7 @@
   width: 100vw;
   height: 100vh;
   overflow: auto;
-  background: #999999;
+  background: rgb(245,245,245);
 }
 .box{
   width: 100vw;
@@ -115,4 +115,71 @@
 }
 .value-class {
   flex: none !important;
+}
+.pay .van-popup{
+  width: 94vw;
+  height: 67vw;
+  border-radius: 3vw;
+  box-sizing: border-box;
+  padding: 4vw;
+  text-align: center;
+}
+.popupTop{
+  display: flex;
+  justify-content: flex-start;
+  line-height: 7vw;
+  border-bottom: 1px solid skyblue;
+}
+.popupTop .van-icon{
+  width: 5vw;
+  height: 5vw;
+  margin-right: 3vw;
+}
+.popupTop image{
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  margin-right: 1vw;   
+}
+.popupTop text{
+  flex: 1;
+  height: 5vw;
+}
+.bankCard{
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 3vw;
+  margin-top: 1vw;
+}
+.bankCard image{
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+}
+.bankCard text{
+  line-height: 13vw;
+  font-size: 4vw;
+  flex: 1;
+  text-align: left;
+}
+.bankCard .van-icon{
+  line-height: 13vw;
+  font-size: 4vw;
+}
+.allPrice{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2vw;
+}
+.allPrice view{
+  text-align: center;
+  font-size: 3vw;
+  line-height: 4vw;
+}
+.allPrice view text{
+  font-size: 5vw;
+  line-height: 9vw;
+}
+.allPrice view text:nth-of-type(2){
+  font-size: 7vw;
 }
