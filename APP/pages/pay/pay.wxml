@@ -65,4 +65,21 @@
     button-text="提交订单"
     bind:submit="onSubmit"
   />
+  <van-popup show="{{ show }}" >
+    <view class='popupTop'>
+      <van-icon name="cross" bindtap="onClose" />
+      <image src='../image/aa1.jpg'></image>
+      <text>确认支付密码</text>
+    </view>
+    <view class='allPrice'>
+      <view>煊赫</view>
+      <view><text>￥</text><text>238.00</text></view>
+    </view>
+    <view class='bankCard'>
+      <image src='../image/aa2.jpg'></image>
+      <text>工商银行存蓄卡(****)</text>
+      <van-icon name="arrow" />
+    </view>
+    <van-button type="danger">确认支付</van-button>
+  </van-popup>
 </view>

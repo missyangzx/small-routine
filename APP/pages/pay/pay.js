@@ -5,7 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-    radio: '1'
+    radio: '1',
+    show: false
+  },
+  onClose() {
+    this.setData({ show: false });
+  },
+  onSubmit(){
+    this.setData({ show: true });
   },
   /**
    * 生命周期函数--监听页面加载
@@ -40,6 +47,7 @@ Page({
       url: '../coupon/coupon',
     })
   },
+  
   /**
    * 生命周期函数--监听页面显示
    */

@@ -1,12 +1,13 @@
 <!--pages/recommend/recommend.wxml-->
 <view class='box'>
   <image src=""></image>
+  <van-loading type="spinner" color="#000" wx:if="{{loadingApp}}" />
   <view class="flex-wrp" style="display:flex;flex-direction:row;flex-wrap:wrap;">
-    <view class="flex-item" wx:for='{{json}}' wx:key='index' bindtap='jump'>
-      <image src='{{item.picUrl}}'></image>
-      <text>{{item.name}}</text>
-      <text>{{item.introduce}}</text>
-      <text>￥{{item.pirce}}</text>
+    <view class="flex-item" wx:for='{{dataes}}' wx:key='index' bindtap='jump'>
+      <image src='{{item.image_url}}'></image>
+      <text>{{item.goods_name}}</text>
+      <text>{{item.short_name}}</text>
+      <text>￥{{item.market_price}}</text>
       <van-icon name="star-o" color='black'></van-icon>
     </view>
   </view>

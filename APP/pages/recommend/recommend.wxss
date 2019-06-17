@@ -45,12 +45,15 @@
 	letter-spacing: 0vw;
 	color: #333333;
   margin-top: 8vw;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .box>.flex-wrp>.flex-item>text:nth-of-type(2){
   padding-left: 2vw;
   width: 45vw;
-	height: 3vw;
-	font-size: 3vw;
+	height: 4.5vw;
+	font-size: 4vw;
 	line-height: 5vw;
 	letter-spacing: 0vw;
 	color: #999999;
@@ -59,10 +62,10 @@
 .box>.flex-wrp>.flex-item>text:nth-of-type(3){
   padding-left: 2vw;
   width: 45vw;
-	height: 3vw;
+	height: 4vw;
 	font-size: 3vw;
 	line-height: 5vw;
 	letter-spacing: 0vw;
 	color: #df0000;
-  margin-top: 6vw;
+  margin-top: 2vw;
 }
