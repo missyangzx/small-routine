@@ -6,8 +6,8 @@ Page({
    */
   data: {
     info: [],
-    latitude:"",
-    longitude:""
+    latitude:0,
+    longitude:0
   },
   onAuthLocation(){
     wx.openSetting({
@@ -52,6 +52,8 @@ Page({
     wx.getLocation({
       success: res => {
         this.setData({
+          latitude: res.latitude,
+          longitude: res.longitude,
           markers: [{
             iconPath: "../image/aa1.jpg",
             id: 0,
@@ -62,8 +64,8 @@ Page({
           }],
           polyline: [{
             points: [{
-              longitude: res.latitude,
-              latitude: res.longitude
+              latitude: res.latitude,
+              longitude: res.longitude
             }],
             color: "#FF0000DD",
             width: 2,
