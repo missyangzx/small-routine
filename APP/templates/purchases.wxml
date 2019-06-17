@@ -1,14 +1,12 @@
-<template name="homeprod">
-  <view class='purchases'>
-    <view class='purchase-price'>
-      <text></text>
-      <text>￥</text>
-      <text class='price'>288</text>
-      <text>.00</text>
-    </view>
-    <view class='purchase-btn'>
-      <text>立即购买</text>
-      <text></text>
-    </view>
+<template name="purchase">
+  <view class='purchase-prices'>
+    <text></text>
+    <text>￥</text>
+    <text class='prices'>288</text>
+    <text>.00</text>
+  </view>
+  <view class='purchase-btns'>
+    <text>立即购买</text>
+    <text></text>
   </view>
 </template>
