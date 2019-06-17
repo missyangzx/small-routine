@@ -1,28 +1,33 @@
+<import src="/templates/products.wxml" />
+<import src="/templates/purchases.wxml" />
 <!--pages/index/home/home.wxml-->
 <view class="home">
-  <swiper
-    indicator-dots="{{true}}"
-    indicator-color="rgba(255, 255, 255, 0.6)"
-    indicator-active-color="#e02e24"
-    autoplay="{{false}}"
-    circular="true"
-    previous-margin="24px"
-    next-margin="24px"
-    bindchange="onChange"
-    style="background-image : url({{bgImage.swiper}})"
-  >
-    <swiper-item
-      class="{{index==current ? 'swiper-active' : ''}}"
-      wx:for="{{banners}}"
-      wx:key
+  <view class='swiper_view_list'>
+    <swiper
+      indicator-dots="{{true}}"
+      indicator-color="rgba(255, 255, 255, 0.6)"
+      indicator-active-color="#e02e24"
+      autoplay="{{false}}"
+      circular="true"
+      previous-margin="24px"
+      next-margin="24px"
+      bindchange="onChange"
+      style="background-image : url({{bgImage.swiper}})"
     >
-      <navigator>
-        <image mode="widthFix" src="{{item.imgUrl}}" class="slide-image"/>
-      </navigator>
-    </swiper-item>
+      <swiper-item
+        class="{{index==current ? 'swiper-active' : ''}}"
+        wx:for="{{banners}}"
+        wx:key
+      >
+        <navigator>
+          <image mode="widthFix" src="{{item.imgUrl}}" class="slide-image"/>
+        </navigator>
+      </swiper-item>
+    </swiper>
     <van-icon class='swiper-icon next' name="arrow" size="2em" color='#fff' />
     <van-icon class='swiper-icon prev' name="arrow-left" size="2em" color='#fff' />
-  </swiper>
+  </view>
+  
   <view class='activities'>
     <view class='activities-bg' style="background-image: url({{bgImage.title}})"></view>
     <view class='activities-content'>
@@ -146,26 +151,110 @@
         </view>
         <view class='hot-item'>
           <view class='item'>
-            <view>1264898489</view>
-            <view>
+            <view class="item-title">1264898489</view>
+            <view class='item-image'>
               <image></image>
             </view>
-            <view></view>
+            <view class='purchases'>
+              <template is="purchase" />
+            </view>
           </view>
-          <view class='item'></view>
+          <view class='item'>
+            <view class="item-title">1264898489</view>
+            <view class='item-image'>
+              <image></image>
+            </view>
+            <view class='purchases'>
+              <template is="purchase" />
+            </view>
+          </view>
         </view>
       </view>
     </view>
   </view>
-  <import src="/templates/products.wxml" />
-  <import src="/templates/purchases.wxml" />
+  <view class="hot-goods1">
+    <view class='hot-goods1-content'>
+      <view class='hot2-bg' style="background-image: url({{bgImage.title}})"></view>
+      <view class='hot2-title'>
+        <text>45489498</text>
+        <text>16549499</text>
+      </view>
+      <view class='hot2-title2'>
+        <view class='title1'>12548</view>
+        <view class='title2'>1568498</view>
+      </view>
+      <view class='hot2-item'>
+        <view class='item'>
+          <view class="item-title">1264898489</view>
+          <view class='item-image'>
+            <image></image>
+          </view>
+          <view class='purchases'>
+            <template is="purchase" />
+          </view>
+        </view>
+        <view class='item'>
+          <view class="item-title">1264898489</view>
+          <view class='item-image'>
+            <image></image>
+          </view>
+          <view class='purchases'>
+            <template is="purchase" />
+          </view>
+        </view>
+      </view>
+      <view class='max-image'>
+        <image></image>
+      </view>
+    </view>
+  </view>
+  <view class="row">
+      <view class='header'>
+        <text class='ranking'>排行榜</text>
+        <view class='volume'>
+          <text class='active'>销量排行</text>
+          <text>销量排行</text>
+        </view>
+      </view>
+      <view class='body'>
+        <view class='center'>
+          <image src=''/>
+          <view class='circle'>
+            <text>1</text>
+          </view>
+          <view class='text'>
+            <text>泰国乳胶狼牙按摩枕</text>
+            <text class='person'>199人付款</text>
+          </view>
+        </view>
+        <view class='center'>
+          <image src=''/>
+          <view class='circle'>
+            <text>2</text>
+          </view>
+          <view class='text'>
+            <text>泰国乳胶狼牙按摩枕</text>
+            <text class='person'>199人付款</text>
+          </view>
+        </view>
+        <view class='center'>
+          <image src=''/>
+          <view class='circle'>
+            <text>3</text>
+          </view>
+          <view class='text'>
+            <text>泰国乳胶狼牙按摩枕</text>
+            <text class='person'>199人付款</text>
+          </view>
+        </view>
+      </view>
+    </view>
   <view class='goodList'>
+    <view class="like_title">猜你喜欢</view>
     <template
     is="homeprod"
     wx:key
     wx:for="{{products}}"
-    data="{{item}}"
-  />
+    data="{{item}}" />
   </view>
-  
 </view>

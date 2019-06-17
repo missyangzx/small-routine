@@ -42,6 +42,7 @@ Page({
   onReady: function () {
 
   },
+  //跳转到优惠券
   myCoupon(){
     wx.navigateTo({
       url: '../coupon/coupon',
