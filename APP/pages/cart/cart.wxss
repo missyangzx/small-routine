@@ -180,8 +180,8 @@ image {
   line-height: 117rpx;
 }
 /* 全选按钮 */
-.shoppingLeft .text {
-  font-size: 30rpx;
+.shoppingLeft{
+  margin-top: 30rpx;
 }
 .shoppingRight {
   display: flex;
