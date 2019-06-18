@@ -14,9 +14,6 @@ swiper {
   background-size: 100% 80%;
   background-repeat: no-repeat;
 } 
-swiper-item{
-  
-}
 .swiper-active{
   box-sizing: border-box;
   padding: 0 24px;
