@@ -53,18 +53,22 @@ Component({
       {
         name: '12',
         portrait: true,
+        imgUrl: 'https://img.alicdn.com/imgextra/i3/2201306665630/O1CN01SOmNL81rSaO9NoUFi_!!2201306665630.jpg'
       },
       {
         name: '12',
         portrait: true,
+        imgUrl: 'https://img.alicdn.com/imgextra/i3/2201306665630/O1CN01fsOF1q1rSaO7p7RCw_!!2201306665630.jpg'
       },
       {
         name: '12',
         portrait: false,
+        imgUrl: 'https://img.alicdn.com/imgextra/i4/2201306665630/O1CN01ErSVgq1rSaO5xY63p_!!2201306665630.jpg'
       },
       {
         name: '12',
         portrait: false,
+        imgUrl: 'https://img.alicdn.com/imgextra/i2/2201306665630/O1CN01H9kyBC1rSaO7p9aEv_!!2201306665630.jpg'
       }
     ]
   },
