@@ -1,6 +1,6 @@
 <!--index.wxml-->
 <view>
-  <view>
+  <view class='sliderImg'>
    <swiper autoplay='true' circular='true' class='slider'>
     <swiper-item>
       <image src='http://t00img.yangkeduo.com/t05img/images/2018-06-23/480a8acbcaea7450f10adebf5ab094fa.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
@@ -12,9 +12,9 @@
       <image src='http://t00img.yangkeduo.com/t03img/images/2018-06-23/93431eb7c93508adecb91b770beac606.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
     </swiper-item>
     </swiper>
-    <view>
-     <text></text>
-     <text></text> 
+    <view class='ImgBtn'>
+     <text class='active'>外观</text>
+     <text>图片</text> 
     </view>
   </view>
   <view class='model1'>
@@ -61,6 +61,11 @@
   <view class='model3'>
     <view class='collageTitle'>
       <text>4人在拼单，可直接参与</text>
+    </view>
+    <view class='success'>
+        <view class='image'>头像</view>
+        <view class='name'>名字</view>
+        <view class='successTime'>24分钟前拼单成功</view>
     </view>
     <view class='collageBox'>
       <swiper autoplay='true' circular='true' class='collageBoxItem' vertical='true' display-multiple-items='1'>
@@ -201,7 +206,7 @@
   <view class='goodsDetailImgBox'>
     详情图片
   </view>
-  <view>
+  <view class='bottomNav'>
     <van-goods-action>
       <van-goods-action-icon
         icon="wap-home"

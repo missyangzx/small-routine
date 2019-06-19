@@ -37,7 +37,7 @@
       </view>
       <view class='activitites-goods'>
         <view class="activtites-goods-image">
-          <image></image>
+          <image class="image" src="https://img.alicdn.com/imgextra/i2/2201306665630/O1CN01JhWMEB1rSaO3esYei_!!2201306665630.png"></image>
         </view>
         <view class='activtites-item'>
           <view>双面透气设计双面透气设计双面透气设计双面透气设计</view>
@@ -79,7 +79,7 @@
         </view>
         <view class='couponList'>
           <view class='coupon-item' wx:for="{{portraits}}" wx:key>
-            <image></image>
+            <image class="image" src="{{item.imgUrl}}"></image>
           </view>
         </view>
       </view>
@@ -95,7 +95,7 @@
         <view class='icon'></view>
       </view>
       <view class='hot-title2'>
-        太少的话是
+        泰国平面波浪枕
       </view>
       <view class='hot-image'>
         <image></image>
@@ -115,11 +115,11 @@
       <view class='hot-image1'>
         <view class='hot-image1s'>
           <view class='max-image'>
-            <image></image>
+            <image class='image' src='https://img.alicdn.com/imgextra/i3/2201306665630/O1CN01nNOEky1rSaO7paJ3d_!!2201306665630.gif'></image>
           </view>
           <view class="min-image">
             <view class='title1'>11124849656</view>
-            <view clalss="title2">12151654989</view>
+            <view class="title2">泰国平面乳胶枕</view>
             <image class='image'></image>
             <view class='purchases'>
               <view class='purchase-price'>
@@ -143,7 +143,7 @@
             <view class='icon'></view>
           </view>
           <view class='hot-title2'>
-            太少的话是
+            泰国波浪按摩枕
           </view>
           <view class='hot-image'>
             <image></image>
