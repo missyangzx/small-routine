@@ -148,15 +148,15 @@ Page({
         })
       }
     })
-    if (this.data.data) {
-      this.setData({
-        isShow: false
-      })
-    } else {
-      this.setData({
-        isShow: false
-      })
-    }
+    // if (this.data.data) {
+    //   this.setData({
+    //     isShow: false
+    //   })
+    // } else {
+    //   this.setData({
+    //     isShow: false
+    //   })
+    // }
   },
   goPay(){
     wx.navigateTo({
