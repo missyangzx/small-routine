@@ -18,6 +18,7 @@
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#1ca95e",
+    "navigationStyle":"custom",
     "navigationBarTitleText": "智能家居生态馆",
     "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true

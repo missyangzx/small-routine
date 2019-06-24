@@ -1,4 +1,6 @@
 // pages/index/homes/homes.js
+import { Home } from '../index-model.js'
+let home = new Home()
 Component({
   /**
    * 组件的属性列表
@@ -8,6 +10,10 @@ Component({
     inner: {
       type: Object,
       value: { item: 'default Value' },
+    },
+    listData: {
+      type: Array,
+      value: []
     }
   },
 
@@ -15,14 +21,15 @@ Component({
    * 组件的初始数据
    */
   data: {
-    banners: [],
-    activitiesWrapWidth: '0',
-    activitiesItemWidth: '0',
-    activities: [],
-    indicatorLineWidth: '0',
-    indicatorMarginLeft: '0',
+    banners: [], //首页轮播
+    recommend: [], //推荐商品
+    guessgoods: [], //猜你喜欢
+    ranking: [], //排行榜
     products: [],
     current: 0,
+    swiperColor: "#9d9d9d", //轮播图圆点颜色
+    swiperActiveIndex: "#535353",//轮播图当前圆点颜色
+    autoplay: true, //轮播图是否自动播放
     bgImage:{
       swiper: '../image/zhang-kaiyv-661828-unsplash.jpg',
       title: '../image/title.png'
@@ -74,22 +81,8 @@ Component({
   },
   ready: function () {
     let that = this
-
-    this.setData({
-      banners: this.getBanners(),
-      products: this.getProducts()
-    })
-    wx.getSystemInfo({
-      success: function (res) {
-        const lineShowNum = 5
-        let floatPercent = 10 / lineShowNum / 10
-        that.setData({
-          activitiesItemWidth: res.windowWidth * floatPercent + 'px',
-          activitiesWrapWidth: res.windowWidth * floatPercent * (that.data.activities.length / 2) + 'px',
-          indicatorLineWidth: lineShowNum / (that.data.activities.length / 2) * 100 + '%'
-        })
-      }
-    })
+    this.getData()
+    
   },
 
   /**
@@ -101,63 +94,30 @@ Component({
         url: '../detail/detail',
       })
     },
-    onChange(e){
-      console.log(e)
+    onChange(e){ //轮播改变
       this.setData({
         current: e.detail.current
       })
-      console.log(this.data.current)
     },
     customMethod: function () {
       console.log(this.data.someData.item)
       console.log(this.properties.inner)
     },
-
-    bindscroll: function (e) {
-      this.setData({
-        indicatorMarginLeft: e.detail.scrollLeft / e.detail.scrollWidth * 100 + '%'
+    getData() {
+      let id = 1;
+      home.getGoods(id, res => {
+        this.setData({
+          banners: res.data.carousel,
+          recommend: res.data.recommend,
+          guessgoods: res.data.guessgoods,
+          ranking: res.data.ranking,
+        })
+        console.log(res.data)
+        console.log(this.data.banners)
+        console.log(this.data.guessgoods)
+        console.log(this.data.ranking)
+        console.log(this.data.recommend)
       })
     },
-
-    getBanners: function () {
-      return [
-        {
-          imgUrl: 'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-          linkUrl: '/pages/test/test'
-        },
-        {
-          imgUrl: 'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-          linkUrl: '/pages/test/test'
-        },
-        {
-          imgUrl: 'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640',
-          linkUrl: '/pages/test/test'
-        },
-      ]
-    },
-    getProducts(){
-      return [
-        {
-          imgUrl: 'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640',
-          price: 20,
-          sell: 220,
-          goods: '我爱的绝地反击打飞机啊的',
-          nameUrl:[
-            'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640',
-            'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640',
-          ]
-        },
-        {
-          imgUrl: 'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640',
-          price: 20,
-          sell: 220,
-          goods: '我爱的绝地反击打飞机啊的',
-          nameUrl: [
-            'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640',
-            'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640',
-          ]
-        }
-      ]
-    }
   }
 })

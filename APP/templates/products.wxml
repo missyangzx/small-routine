@@ -1,19 +1,19 @@
 <template name="homeprod">
   <view class='item' bindtap='godetail'>
     <view class='item-image'>
-      <image class='image' src="{{item.imgUrl}}"></image>
+      <image class='image' src="{{item.goods_thumb}}"></image>
     </view>
     <view class='item-news'>
       <view class='item-Text'>
-        {{item.goods}}
+        {{item.goods_name}}
       </view>
       <view class='item-Text2'>
-        泰国
+        {{item.goods_brief}}
       </view>
       <view class='item-footer'>
         <text class='price'>
           <text class='price-Icon'>￥</text>
-          <text class='price-pri'>{{item.price}}.0</text>
+          <text class='price-pri'>{{item.shop_price}}</text>
         </text>
       </view>
     </view>
