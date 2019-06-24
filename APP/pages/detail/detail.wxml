@@ -2,24 +2,14 @@
 <view>
   <view class='sliderImg'>
    <swiper autoplay='true' circular='true' class='slider'>
-    <swiper-item>
-      <image src='http://t00img.yangkeduo.com/t05img/images/2018-06-23/480a8acbcaea7450f10adebf5ab094fa.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
+    <swiper-item wx:for='{{sliderImg}}' wx:key='{{index}}'>
+      <image src='{{item}}' class='{{change?"":"wiper-slide-active"}}'></image>
     </swiper-item>
-    <swiper-item>
-      <image src='http://t00img.yangkeduo.com/t02img/images/2018-06-23/259344bf676bc31e2ce662cb5b7ca1ff.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
-    </swiper-item>
-    <swiper-item>
-      <image src='http://t00img.yangkeduo.com/t03img/images/2018-06-23/93431eb7c93508adecb91b770beac606.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
-    </swiper-item>
-    </swiper>
-    <view class='ImgBtn'>
-     <text class='active'>外观</text>
-     <text>图片</text> 
-    </view>
+   </swiper>
   </view>
   <view class='model1'>
     <view class='goodsTitle'>
-      <view class='title'>【东购】 布艺沙发小户型家用转交三人位客厅组合整装简约家具沙发</view>
+      <view class='title'>{{goods.goods_name}}</view>
       <view class='share'>
         <view><text class='iconfont icon-fenxiang'></text></view>
         <view><text>分享</text></view>
@@ -27,7 +17,7 @@
     </view>
     <view class='price'>
       <view class='priceBox'>
-        <text class='newPric'>￥<text class='newPric num'>118-159</text></text>
+        <text class='newPric'>￥<text class='newPric num'>{{goods.shop_price}}-{{goods.market_price}}</text></text>
       </view>
     </view>
     <view class='seller'>
@@ -126,35 +116,36 @@
   </view>
   <view class='appraise'>
     <view class='appraiseTitle'>
-      <text>商品评价（8823）</text>
+      <text>商品评价（{{ratings.length}}）</text>
       <text class='more'>查看更多<text class='arrow'></text></text>
     </view>
     <view class='appraiseNav'>
-      <text class='nav'>便宜<text class='num'>(126)</text></text>
-      <text class='nav'>质量好<text class='num'>(111)</text></text> 
-      <text class='nav'>软硬度好<text class='num'>(52)</text></text>
-      <text class='nav'>服务态度好<text class='num'>(46)</text></text>
-      <text class='nav'>枕着很舒服<text class='num'>(46)</text></text>
+      <text class='nav'>便宜<text class='num'>({{ratings.length}})</text></text>
+      <text class='nav'>质量好<text class='num'>({{ratings.length}})</text></text> 
+      <text class='nav'>软硬度好<text class='num'>({{ratings.length}})</text></text>
+      <text class='nav'>服务态度好<text class='num'>({{ratings.length}})</text></text>
+      <text class='nav'>枕着很舒服<text class='num'>({{ratings.length}})</text></text>
     </view>
-    <view class='appraiseItem'>
-      <view class='appraiseUser'>
-         <view class='image'>头像</view>
-        <view class='name'>名字</view>
-      </view>
-      <view class='appriaseContent'>
-        <view class='appriaseText'>
-          商品质量特别的好晚上睡觉用它-夜到天亮，睡得很踏
-          实没有异味收到货，柔软度还是不错的，枕头本身的
-          味道是很自然的味道。
+    <view wx:if='{{ratings}}'>
+      <view class='appraiseItem' wx:for='{{ratings}}' wx:key='{{index}}'>
+        <view class='appraiseUser'>
+          <view class='image'>头像</view>
+          <view class='name'>名字</view>
         </view>
-        <view class='appriaseImage'>
-          <text>图片1</text>
-          <text>图片2</text>
-          <text>图片3</text> 
+        <view class='appriaseContent'>
+          <view class='appriaseText'>
+            商品质量特别的好晚上睡觉用它-夜到天亮，睡得很踏
+            实没有异味收到货，柔软度还是不错的，枕头本身的
+            味道是很自然的味道。
+          </view>
+          <view class='appriaseImage'>
+            <text>图片1</text>
+            <text>图片2</text>
+            <text>图片3</text> 
+          </view>
         </view>
       </view>
     </view>
-    <view class='appraiseMore'>查看更多<text class='arrow'></text></view>
   </view>
   <view class='goodsDetail'>
     <view class='detailTitle'>商品详情</view>
@@ -245,9 +236,9 @@
       <view class='addgoodsBox'>
         <view class='marque'>
           <view class='addgoodsMsg'>
-            <view class='addGoodsImg'>商品图</view>
+            <image src='{{goods.goods_thumb}}' class='addGoodsImg'></image>
             <view class='addGoodsPrice'>
-              <view class='Price'>￥<text>122-133</text></view>
+              <view class='Price'>￥<text>{{goods.shop_price}}-{{goods.market_price}}</text></view>
               <view class='num'>库存2343件</view>
               <view class='checksize'>请选择 尺码</view>
             </view>
