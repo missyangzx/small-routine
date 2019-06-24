@@ -34,7 +34,6 @@ Page({
   },
   scroll(e){
     if (e.detail.scrollTop>=190){
-      console.log(e);
       this.setData({
         setNav: "#278c58"
       })
