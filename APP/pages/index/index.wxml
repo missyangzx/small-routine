@@ -1,5 +1,15 @@
 <!--index.wxml-->
-<view class="container">
-  <home/>
-</view>
+
+  <view class="container">
+   
+      <view class="custom flex_center" style="padding-top:{{28}}px;background-color:{{setNav}}">
+        <text>智能家居生态馆</text>
+      </view>
+    
+    <scroll-view style="height: {{setHeight}}px" scroll-y="true" bindscroll="scroll">
+    <home listData="{{listData}}"></home>
+    </scroll-view>
+  </view>
+
+
 

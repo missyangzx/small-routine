@@ -1,44 +1,47 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+import {Config} from '../../utils/config.js'
+import {Home} from './index-model.js'
+let home = new Home()
 Page({
   data: {
     currentSortId: 1,
     scrollLeft: 0,
     windowWidth: 0,
-    imgUrl:[
-      'https://images.unsplash.com/photo-1551334787-21e6bd3ab135?w=640',
-      'https://images.unsplash.com/photo-1551214012-84f95e060dee?w=640',
-      'https://images.unsplash.com/photo-1551446591-142875a901a1?w=640'
-    ],
-    indicatorActiveColor: "#fff",
+    indicatorActiveColor: "#fff", //指示器颜色
     indicatorDots: true, //是否显示指示器
+    listData: [],
+    setNav: "", //nav背景色
+    setHeight: wx.getSystemInfoSync().windowHeight //窗口高度
   },
   onLoad: function () {
-   
+    this.getData();
   },
   onReady: function () {
-    let that = this
-    wx.getSystemInfo({
-      success: function (res) {
-        that.setData({
-          windowWidth: res.windowWidth
-        })
-      }
-    })
+    
   },
-  changeSortId: function (e) {
-    if (e.target.id < 6) {
+  
+  getData(){
+    let id = 1;
+    home.getGoods(id, res => {
       this.setData({
-        currentSortId: parseInt(e.target.id),
-        scrollLeft: 0
+        listData: res.data
       })
-    } else {
+      console.log(res.data)
+    })
+    
+  },
+  scroll(e){
+    if (e.detail.scrollTop>=190){
+      console.log(e);
       this.setData({
-        currentSortId: parseInt(e.target.id),
-        scrollLeft: (parseInt(e.target.id) - 4.5) * (this.data.windowWidth / 7)
+        setNav: "#278c58"
+      })
+    }else {
+      this.setData({
+        setNav: ""
       })
     }
-  },
+  }
 })

@@ -5,9 +5,9 @@
   <view class='swiper_view_list'>
     <swiper
       indicator-dots="{{true}}"
-      indicator-color="rgba(255, 255, 255, 0.6)"
-      indicator-active-color="#e02e24"
-      autoplay="{{false}}"
+      indicator-color="{{swiperColor}}"
+      indicator-active-color="{{swiperActiveIndex}}"
+      autoplay="{{autoplay}}"
       circular="true"
       previous-margin="24px"
       next-margin="24px"
@@ -20,12 +20,12 @@
         wx:key
       >
         <navigator>
-          <image mode="widthFix" src="{{item.imgUrl}}" class="slide-image"/>
+          <image mode="widthFix" src="{{item.src}}" class="slide-image"/>
         </navigator>
       </swiper-item>
     </swiper>
-    <van-icon class='swiper-icon next' name="arrow" size="2em" color='#fff' />
-    <van-icon class='swiper-icon prev' name="arrow-left" size="2em" color='#fff' />
+    <!-- <van-icon class='swiper-icon next' name="arrow" size="2em" color='#fff' />
+    <van-icon class='swiper-icon prev' name="arrow-left" size="2em" color='#fff' /> -->
   </view>
   
   <view class='activities'>
@@ -37,12 +37,12 @@
       </view>
       <view class='activitites-goods'>
         <view class="activtites-goods-image">
-          <image class="image" src="https://img.alicdn.com/imgextra/i2/2201306665630/O1CN01JhWMEB1rSaO3esYei_!!2201306665630.png"></image>
+          <image class="image" src="{{recommend[0].shop_logo1}}"></image>
         </view>
         <view class='activtites-item'>
-          <view>双面透气设计双面透气设计双面透气设计双面透气设计</view>
+          <view>{{recommend[0].shop_name}}</view>
           <view class='price'>
-            <text class='newPrice'>￥200</text>
+            <text class='newPrice'>￥{{recommend[0].shop_price}}</text>
             <text>￥150</text>
           </view>
           <view class='timer-activitites'>限时抢购</view>
@@ -98,12 +98,12 @@
         泰国平面波浪枕
       </view>
       <view class='hot-image'>
-        <image></image>
+        <image class="image" src="{{recommend[0].shop_logo1}}"></image>
         <view class='purchase'>
           <view class='purchase-price'>
             <text></text>
             <text>￥</text>
-            <text class='price'>288</text>
+            <text class='price'>{{recommend[0].shop_price}}</text>
             <text>.00</text>
           </view>
           <view class='purchase-btn'>
@@ -209,52 +209,32 @@
     </view>
   </view>
   <view class="row">
-      <view class='header'>
-        <text class='ranking'>排行榜</text>
-        <view class='volume'>
-          <text class='active'>销量排行</text>
-          <text>销量排行</text>
-        </view>
-      </view>
-      <view class='body'>
-        <view class='center'>
-          <image src=''/>
-          <view class='circle'>
-            <text>1</text>
-          </view>
-          <view class='text'>
-            <text>泰国乳胶狼牙按摩枕</text>
-            <text class='person'>199人付款</text>
-          </view>
-        </view>
-        <view class='center'>
-          <image src=''/>
-          <view class='circle'>
-            <text>2</text>
-          </view>
-          <view class='text'>
-            <text>泰国乳胶狼牙按摩枕</text>
-            <text class='person'>199人付款</text>
-          </view>
-        </view>
-        <view class='center'>
-          <image src=''/>
-          <view class='circle'>
-            <text>3</text>
-          </view>
-          <view class='text'>
-            <text>泰国乳胶狼牙按摩枕</text>
-            <text class='person'>199人付款</text>
-          </view>
-        </view>
+    <view class='header'>
+      <text class='ranking'>排行榜</text>
+      <view class='volume'>
+        <text class='active'>销量排行</text>
       </view>
     </view>
+      <view class='bodys'>
+        <view class='center' wx:for="{{ranking}}" wx:key>
+          <image src='{{item.goods_thumb}}'/>
+          <view class='circle'>
+            <text>{{index+1}}</text>
+          </view>
+          <view class='text'>
+            <text>{{item.goods_name}}</text>
+            <text class='person'>{{virtual_sales}}人付款</text>
+          </view>
+        </view>
+      </view>
+  </view>
   <view class='goodList'>
     <view class="like_title">猜你喜欢</view>
     <template
     is="homeprod"
     wx:key
-    wx:for="{{products}}"
+    wx:for="{{guessgoods}}"
     data="{{item}}" />
+    <view class="AllGoods">查看全部宝贝</view>
   </view>
 </view>
