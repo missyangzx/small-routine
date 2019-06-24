@@ -22,6 +22,29 @@
 page{
   background: #f2f2f2;
 }
+.sliderImg{
+  position: relative;
+}
+.sliderImg .ImgBtn{
+  position: absolute;
+  bottom: 44rpx;
+  width: 100%;
+  text-align: center;
+}
+.sliderImg .ImgBtn text{
+  display: inline-block;
+  width: 89rpx;
+  height: 47rpx;
+  border-radius: 17rpx;
+  margin: 0 19rpx;
+  background:#ffffff;
+  font-size: 30rpx;
+  color: #303030;
+}
+.sliderImg .ImgBtn text.active{
+  background: #ff3000;
+  color: #ffffff;
+}
 .slider{
   width: 100%;
   height: 330px;
