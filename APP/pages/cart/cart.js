@@ -1,4 +1,6 @@
 // pages/cart/cart.js
+import {Cart} from "./cart-model.js"
+let cart=new Cart()
 Page({
 
   /**
@@ -12,7 +14,8 @@ Page({
     icon: {
       normal: '//img.yzcdn.cn/icon-normal.png',
       active: '//img.yzcdn.cn/icon-active.png'
-    }
+    },
+    dataList: []
   },
   //设置缓存
   setCookie(){
@@ -23,22 +26,15 @@ Page({
   },
   //获取数据
   getData(){
-    wx.request({
-      url: "http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?list_update_time=true&platform=1&assist_allowed=1&page=1&size=20&list_id=40IGMQwe8t&antiContent=0anAfxn5ryloU9dVzi6xXe7XBEYGZ02u1eRp6zsG0p24VBvHZGpuUI6FIe94e_szamrCZNIUwuomrRnx7uxmVT9d9LTTlzjQ1gQvxZfGctxGlJYDe6LXVv1aDnbPHfnICDbTCXJwjMm9Qpp9BdGyYZt_NlYDEmkq0PPX7zp8vGGfFwM5s46ju2gHErdC2cY_0gqZw6eC56DfJeoP-bD0clVISh9lfKoVKk2UOzxbLdYYz3fE9U6vPKhnNRGnlzkKwGmU1XJqrTNLSRArAM6oqB-ugeotVl27wJm0kinAYzwZSMo2LGdDBt1v0dEDCjA8OqMqSFNsgB_ORB6ztyFM--dyC7c881nz5j51iXa5RVtMcGTTuz3bw7VKYW-crokveUvvFbRN5SYo-s8RwfrqpAp3dXZKhOrdOlDrORYGosHDKP&pdduid=0",
-      header: {
-        "content-type": "application/json"
-      },
-      success: res => {
-        let list = res.data.goods_list;
-        list.forEach(item => {
-          item.count = 1;
-          item.check = false;
-        })
-        this.setData({
-          data: list
-        })
-      }
-    }) 
+    let list = wx.getStorageSync('cart');
+    list.forEach(item => {
+      item.count=1;
+      item.check=false;
+    })
+    this.setData({
+      data: list
+    })
+    console.log(wx.getStorageSync('cart'));
   },
   //++
   add(e) {
@@ -64,7 +60,6 @@ Page({
     this.data.data.forEach(item => {
       item.check = !!e.detail
     })
-    
     this.setData({
       checked: e.detail,
       data: this.data.data
@@ -88,7 +83,7 @@ Page({
     this.data.totalPrice = 0
     this.data.data.forEach(item => {
       if (item.check) {
-        this.data.totalPrice += item.count * item.market_price
+        this.data.totalPrice += item.count * item.shop_price
       }
     })
     this.setData({
@@ -122,45 +117,88 @@ Page({
   },
   //跳转到结算页面
   goPay(){
-    if (this.data.totalPrice!=="00.00"){
+    this.setData({
+      dataList: []
+    })
+    this.data.data.forEach(item => {
+      if(item.check==true){
+        this.data.dataList.push(item)
+      }
+    })
+    // console.log(this.data.dataList)
+    if (this.data.totalPrice !== "00.00") {
       wx.navigateTo({
-        url: '../pay/pay',
+        url: `../pay/pay?dataList=${JSON.stringify(this.data.dataList)}&price=${this.data.totalPrice}`,
       })
       wx.setNavigationBarTitle({
         title: '确认订单',
       })
     }
   },
+  //点击跳转商品详情
+  goDetail(e){
+    let id = e.currentTarget.dataset.id;
+    console.log(e, id)
+    wx.navigateTo({
+      url: `../detail/detail?id=${id}`,
+    })
+  },
   // /**
   //  * 生命周期函数--监听页面加载
   //  */
   onLoad: function (options) {
+    this.getData()
     wx.setNavigationBarTitle({
       title: '购物车'
     })
     wx.getStorage({
       key: "data",
       success: res => {
-        console.log(res.data)
+        // console.log(res.data)
         this.data.data=res.data
         this.setData({
-          data: this.data.data
+          data: this.data.data,
+          totalPrice: this.data.totalPrice
         })
       }
     })
-    // if (this.data.data) {
-    //   this.setData({
-    //     isShow: false
-    //   })
-    // } else {
-    //   this.setData({
-    //     isShow: false
-    //   })
-    // }
-  },
-  goPay(){
-    wx.navigateTo({
-      url: '../pay/pay',
-    })
   }
 })
+
+
+// 项目经理与产品确定需求，进行团队，产品前端后端设计测试运营
+// 研究讨论确定框架需求以及所用技术
+
+// 设计部门出设计稿
+
+// 前端按照设计稿百分百还原页面并实现逻辑
+
+// 后端出接口
+
+// 前端拿到接口进行数据联调
+
+// 2部门合作、1.在需求不明确的情况下，与产品进行沟通，并确定具体实施方案
+//     2.在设计稿上，设计效果与需求不相符，有的地方标注不明确，有的地方状态显示不全面，与设计部门进行沟通解决
+//     3.与后端合作，接口无法获取，数据获取不全面，获取到的图片地址不对，与后端人员进行数据联调
+
+// 三、不能合作时遇到冲突：设计稿图标不明确，需要与设计部进行沟通得以解决；接口问题，
+
+// 四、前端问题：购物车逻辑，获取后台接口，
+
+// 三、工作安排：例会，做什么，每周换组长，自己作为组长如何分配工作，日报、周报
+
+// 组员内部任务进度慢，再次如何重新分配工作，遇到问题团队如何解决
+
+// 收获：
+
+// 查看接口文档，自己测试接口；调取接口，遇到问题及时与后台沟通解决；目前完成的首页和详情各一部分接口
+
+// 工作配合：配合领导的所有工作安排；配合各部门的工作（配合运营部淘宝设计修改，配合产品完成项目及需求修改）；
+
+// 协同开发：使用git版本管理工具管理整个项目，实现协同开发，大大提高了项目完成效率
+
+// 遇到的问题：git上的问题（合并）
+
+// 分享：小程序框架的分享（vant-weapp，element-ui），UI框架的学习与分享
+
+// 项目完成：音乐播放器，智能家居生态馆，粥品香坊

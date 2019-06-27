@@ -6,7 +6,9 @@ Page({
    */
   data: {
     radio: '1',
-    show: false
+    show: false,
+    data: [],
+    price: 0
   },
   onClose() {
     this.setData({ show: false });
@@ -21,6 +23,14 @@ Page({
     wx.setNavigationBarTitle({
       title: '确认订单',
     })
+    console.log(options)
+    if(options.dataList){
+      this.setData({
+        data: JSON.parse(options.dataList),
+        price: options.price
+      })
+    }
+    console.log(this.data.price)
   },
   onGotUserInfo: function (e) {
     

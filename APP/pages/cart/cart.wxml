@@ -2,25 +2,25 @@
 <view class='shop'>
   <view class='shop-box'>
   <!-- 购物车是空的时候 -->
-    <view class='shop-empty' wx:if="{{!data}}">
+    <view class='shop-empty' wx:if="{{!data.length}}"  style="margin-top: 400rpx">
       <view>
-          <image src='../image/shop.jpg'></image>
+          <image src='../image/empty.png'></image>
           <text class='empty'>购物车是空的~</text>
           <button class='btn'>去逛逛</button>
       </view>
     </view>
     <!-- 购物车有东西的时候 -->
-    <view class='shop-Valued'>
-      <view class='shop-item' wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
+    <view class='shop-Valued' wx:if="{{data.length}}">
+      <view class='shop-item' wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}" >
           <!-- 是否选中 -->
         <van-checkbox value="{{item.check}}" checked-color="#07c160" bind:change="changeItem"  data-index="{{index}}"></van-checkbox>
           <!-- 图片 -->
-          <image src='{{item.image_url}}'></image>
+          <image src='{{item.goods_thumb}}' data-id="{{item.goods_id}}" bindtap="goDetail"></image>
           <!-- 详细信息 -->
           <view class='item-content'>
             <text class='goods_name'>{{item.goods_name}}</text>
-            <text class='short_name'>{{item.short_name}}</text>
-            <text class='market_price'>￥{{item.market_price}}</text>
+            <text class='short_name'>{{item.goods_name}}</text>
+            <text class='market_price'>￥{{item.shop_price}}</text>
           </view>
           <!-- 商品数量 -->
           <view class='Products' wx:if="{{!item.check}}">
@@ -38,18 +38,18 @@
             <text class='text'>删除</text>
           </view>
       </view>
+      <view class='shopping'>
+      <view class='shoppingBottom'>
+        <view class='shoppingLeft'>
+          <!-- 全选 -->
+          <van-checkbox value="{{checked}}" checked-color="#07c160" bind:change="change" class='checkbox'>全选</van-checkbox>
+        </view>
+        <view class='shoppingRight'>
+          <text class='TotalCost'>￥{{totalPrice}}</text>
+          <button class='Settlement' bindtap="goPay" data-list="{{dataList}}" data-price="{{totalPrice}}">去结算</button>
+        </view>
+      </view>    
     </view>
-  </view>
-  <view class='shopping'>
-    <view class='shoppingBottom'>
-      <view class='shoppingLeft'>
-        <!-- 全选 -->
-        <van-checkbox value="{{checked}}" checked-color="#07c160" bind:change="change" class='checkbox'>全选</van-checkbox>
-      </view>
-      <view class='shoppingRight'>
-        <text class='TotalCost'>￥{{totalPrice}}</text>
-        <button class='Settlement' bindtap="goPay">去结算</button>
-      </view>
     </view>
   </view>
 </view>

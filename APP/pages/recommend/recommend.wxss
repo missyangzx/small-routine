@@ -1,71 +1,64 @@
 /* pages/recommend/recommend.wxss */
-.box{
-  text-align: center;
+.wrap{
+  width: 750rpx;
+  height: 1334rpx;
+  background: #efefef;
 }
-.box>image{
-	width: 100vw;
-	height: 45vw;
-	background-color: #278c58;
-	box-shadow: 0vw 1vw 2vw 0vw 
-		rgba(200, 200, 200, 0.2);
+.wrap image{
+  width: 100%;
+  height: 350rpx;
+  background: orange;
 }
-.box>.flex-wrp{
+.list{
+  width: 100%;
   box-sizing: border-box;
-  padding-right: 3vw;
+  padding: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.box>.flex-wrp>.flex-item{
-  width: 45vw;
-  margin-left: 3vw;
-  height: 70vw;
-	background-color: #ffffff;
-	box-shadow: 0vw 0vw 1vw 0vw 
-		rgba(0, 0, 0, 0.06);
-	border-radius: 1vw;
+.lis{
+  width:48%;
+  margin-bottom:25rpx;
+  background:#fff;
+  border-radius: 20rpx;
+  overflow: hidden;
   position: relative;
 }
-.box>.flex-wrp>.flex-item>van-icon{
-  position: absolute;
-  right: 3vw;
-  top: 3vw;
+.lis image{
+  width:100%;
+  height:287rpx;
+  margin-bottom: 32rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
 }
-.box>.flex-wrp>.flex-item>image{
-  display: inline-block;
-  width: 45vw;
-  height: 40vw;
-}
-.box>.flex-wrp>.flex-item>text{
-  display: block;
-  box-sizing: border-box;
-  padding-left: 2vw;
-  text-align: left;
-  width: 45vw;
-	height: 5vw;
-	font-size: 5vw;
-	line-height: 5vw;
-	letter-spacing: 0vw;
-	color: #333333;
-  margin-top: 8vw;
+.lis view{
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.box>.flex-wrp>.flex-item>text:nth-of-type(2){
-  padding-left: 2vw;
-  width: 45vw;
-	height: 4.5vw;
-	font-size: 4vw;
-	line-height: 5vw;
-	letter-spacing: 0vw;
-	color: #999999;
-  margin-top: 3vw;
+.new_text1{
+  font-size:28rpx;
+  box-sizing: border-box;
+  padding: 0 89rpx 15rpx 10rpx;
 }
-.box>.flex-wrp>.flex-item>text:nth-of-type(3){
-  padding-left: 2vw;
-  width: 45vw;
-	height: 4vw;
-	font-size: 3vw;
-	line-height: 5vw;
-	letter-spacing: 0vw;
-	color: #df0000;
-  margin-top: 2vw;
+.new_text_2{
+  color:#ccc;
+  font-size: 24rpx;
+  padding-left: 10rpx;
+  padding-bottom: 31rpx;
+  box-sizing: border-box;
+}
+.new_text_3{
+  color:red;
+  font-size: 20rpx;
+  padding-left: 15rpx;
+  padding-bottom: 33rpx;
+  box-sizing: border-box;
+}
+.lis .icon{
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
 }

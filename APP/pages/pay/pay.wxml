@@ -2,39 +2,50 @@
 <view class='pay'>
   <view class='box'>
     <text>请确认收货地址</text>
-    <text>></text>
+    <icon class="iconfont icon-youjiantou"></icon>
   </view>
-  <view class='colorBar'></view>
-  <view class='shopping'>
-    <view class='shopList'>
-      <image src='../image/aa1.jpg'></image>
+  <!-- 彩条 -->
+  <view class='Colorbar'>
+    <image src='../image/Colorbar.png' style="width: 100%; height: 4rpx;"></image>
+  </view>
+  <!-- 商品详情 -->
+  <view  wx:for="{{data}}" wx:key="{{index}}" data-index="{{index}}">
+    <view class='shopping'>
+      <view class='title'>
+        <icon class='iconfont icon-yemian'></icon>
+        <text>neodpillo海外旗舰店</text>
+        <icon class='iconfont icon-youjiantou'></icon>
+      </view>
+      <view class='shopList'>
+        <image src='{{item.goods_thumb}}'></image>
+        <view>
+          <text>{{item.goods_name}}</text>
+          <text>{{item.goods_name}}</text>
+        </view>
+        <view>
+          <text style="margin-right: 30rpx;">共1件</text>
+          <text>￥{{item.shop_price}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='discount' bindtap='myCoupon'>
+      <text>优惠</text>
+      <text>0张可用 ></text>
+    </view>
+    <view class='prices'>
       <view>
-        <text>狼牙枕</text>
-        <text>米色</text>
+        <text>商品总额</text>
+        <text>￥{{item.shop_price}}</text>
       </view>
       <view>
-        <text>共一件</text>
-        <text>￥238.00</text>
+        <text>运费</text>
+        <text>￥00.00</text>
       </view>
     </view>
-  </view>
-  <view class='discount' bindtap='myCoupon'>
-    <text>优惠</text>
-    <text>0张可用 ></text>
-  </view>
-  <view class='prices'>
-    <view>
-      <text>商品总额</text>
-      <text>￥238.00</text>
+    <view class='note'>
+      <text>留言</text>
+      <text>给买家留言</text>
     </view>
-    <view>
-      <text>运费</text>
-      <text>￥00.00</text>
-    </view>
-  </view>
-  <view class='note'>
-    <text>留言</text>
-    <text>给买家留言</text>
   </view>
   <view class='radioBtn'>
     <van-radio-group value="{{ radio }}" bind:change="onChange">
@@ -61,7 +72,7 @@
     </van-radio-group>
   </view>
   <van-submit-bar
-    price="{{ 3050 }}"
+    price="{{ 2298 }}"
     button-text="提交订单"
     bind:submit="onSubmit"
   />
@@ -73,7 +84,7 @@
     </view>
     <view class='allPrice'>
       <view>煊赫</view>
-      <view><text>￥</text><text>238.00</text></view>
+      <view><text>￥</text><text>{{price}}.00</text></view>
     </view>
     <view class='bankCard'>
       <image src='../image/aa2.jpg'></image>

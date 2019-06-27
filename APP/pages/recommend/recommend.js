@@ -1,45 +1,40 @@
 // pages/recommend/recommend.js
+import { Recommend } from "./recommend-model.js"
+let recommend = new Recommend()
 Page({
+
   /**
    * 页面的初始数据
    */
   data: {
-    loadingApp:true,
-    dataes:[]
-  },
-  getData() {
-    wx.request({
-      url: "http://mobile.yangkeduo.com/proxy/api/api/alexa/v1/goods?&page=1&size=20",
-      header: {
-        "content-type": "application/json"
-      },
-      success: res => {
-        let list = res.data.goods_list;
-        this.setData({
-          dataes: list
-        })
-        console.log(this.data.dataes)
-      }
-    })
+    data: [],
+    loadingApp: true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.setNavigationBarTitle({
-      title: '新品',
-    })
-    setTimeout(()=>{
+    setTimeout(() => {
       this.setData({
         loadingApp: false
       })
-    },2000)
-    this.getData();
+    }, 2000)
+    this.getData()
   },
-  jump(){
+  getData(){
+    let id = 1;
+    recommend.getRecommend(id, res => {
+      this.setData({
+        data: res.data.guessgoods
+      })
+      console.log(res.data)
+    })
+  },
+  goDetail(e){
+    let id=e.currentTarget.dataset.id;
     wx.navigateTo({
-      url: '../detail/detail',
+      url: `../detail/detail?id=${id}`,
     })
   },
   /**

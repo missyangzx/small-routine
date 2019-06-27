@@ -1,49 +1,53 @@
-<!--index.wxml-->
-<view>
-  <view class='sliderImg'>
-   <swiper autoplay='true' circular='true' class='slider'>
-    <swiper-item>
-      <image src='http://t00img.yangkeduo.com/t05img/images/2018-06-23/480a8acbcaea7450f10adebf5ab094fa.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
-    </swiper-item>
-    <swiper-item>
-      <image src='http://t00img.yangkeduo.com/t02img/images/2018-06-23/259344bf676bc31e2ce662cb5b7ca1ff.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
-    </swiper-item>
-    <swiper-item>
-      <image src='http://t00img.yangkeduo.com/t03img/images/2018-06-23/93431eb7c93508adecb91b770beac606.jpeg?imageMogr2/strip%7CimageView2/2/w/1300/q/80'></image>
-    </swiper-item>
-    </swiper>
-    <view class='ImgBtn'>
-     <text class='active'>外观</text>
-     <text>图片</text> 
+<!--pages/detail/detail.wxml-->
+<view class="container">
+  <view class="custom flex_center" style="padding-top:{{28}}px;background-color:{{setNav}}">
+    <view class='arrow' bindtap='goBack'>
+      <icon class='iconfont icon-youjiantou'></icon>
+    </view>
+    <view class='cart'>
+      <icon class='iconfont icon-icon' style='color:#fff;'></icon>
+    </view>
+    <view class='top-more'>
+      <icon class='iconfont icon-ic_more_normal'></icon>
+    </view>
+    <view class='top-share'>
+      <icon class='iconfont icon-fenxiang'></icon>
     </view>
   </view>
-  <view class='model1'>
-    <view class='goodsTitle'>
-      <view class='title'>【东购】 布艺沙发小户型家用转交三人位客厅组合整装简约家具沙发</view>
-      <view class='share'>
-        <view><text class='iconfont icon-fenxiang'></text></view>
-        <view><text>分享</text></view>
+  <scroll-view style="height: {{setHeight}}px" scroll-y="true" bindscroll="scroll">
+    <view class='wrap'>
+      <view class='top'>
+        <image src="{{data.goods_thumb}}"></image>
       </view>
-    </view>
-    <view class='price'>
-      <view class='priceBox'>
-        <text class='newPric'>￥<text class='newPric num'>118-159</text></text>
+      <view class='news'>
+        <view class='news-top'>
+          <text>{{data.goods_name}}</text>
+          <view class='share'>
+            <icon class='iconfont icon-fenxiang'></icon>
+            <text>分享</text>
+          </view>
+        </view>
+        <view class='news-center'>
+          ￥<text>{{data.shop_price}}</text>
+        </view>
+        <view class='news-bottom'>
+          <text>快递：免运费</text>
+          <text class='saleNum'>已拼3.8万件</text>
+        </view>
       </view>
-    </view>
-    <view class='seller'>
-      <text>快递：免运费</text>
-      <text class='sellerNum'>已拼3.8万件</text>
-    </view>
-  </view>
-  <view class='Coupon'>
-    <view class='couponBox'> 
-      <view><text class='iconfont icon-youhuiquan couponIcon'></text><text class='couponItem'>优惠券</text></view>
-      <view><text class='iconfont icon-youhuiquan couponIcon'></text><text class='couponItem'>优惠券</text></view>
-    </view>
-    <text class='arrow'></text> 
-  </view>
-  <view class='model2'>
-    <view class='serviceCheck'>
+      <view class='coupon'>
+        <view class='couponBox'> 
+          <view>
+            <icon class='iconfont icon-youhuiquan'></icon>
+            <text>10元店铺优惠券</text>
+          </view>
+          <view>
+            <icon class='iconfont icon-youhuiquan'></icon>
+            <text>20元店铺优惠券</text>
+          </view>
+        </view>
+        <icon class='iconfont icon-youjiantou'></icon>
+      </view>
       <view class='serviceBox'>
         <text class='service'>极速退款</text>
         ·
@@ -52,218 +56,229 @@
         <text class='service'>7天退换</text>
         ·
         <text class='service'>48小时发货</text>
+        <icon class='iconfont icon-youjiantou jaintou'></icon>
       </view>
+      <!-- 拼团部分开始 -->
+      <view class='assemble'>
+        <view class='collageTitle'>
+          <text>4人在拼单，可直接参与</text>
+        </view>
+        <view class='collageBox'>
+          <swiper autoplay='true' circular='true' class='collageBoxItem' vertical='true' display-multiple-items='1'>
+            <swiper-item class='scrollitem'>
+              <view class='user'>
+                <view class='image'>头像</view>
+                <view class='name'>名字</view>
+              </view>
+              <view class='settlement'>
+                <view class='discrepancy'>
+                  <view class='peopleNum'>差3人拼成</view>
+                  <view class='time'>剩余00:00:00:00.0结束</view>
+                </view>
+                <button>去拼单</button>
+              </view>
+            </swiper-item>
+            <swiper-item class='scrollitem'>
+              <view class='user'>
+                <view class='image'>头像</view>
+                <view class='name'>名字</view>
+              </view>
+              <view class='settlement'>
+                <view class='discrepancy'>
+                  <view class='peopleNum'>差3人拼成</view>
+                  <view class='time'>剩余00:00:00:00.0结束</view>
+                </view>
+                <button>去拼单</button> 
+              </view>
+            </swiper-item>
+            <swiper-item class='scrollitem'>
+              <view class='user'>
+                <view class='image'>头像</view>
+                <view class='name'>名字</view>
+              </view>
+              <view class='settlement'>
+                <view class='discrepancy'>
+                  <view class='peopleNum'>差3人拼成</view>
+                  <view class='time'>剩余00:00:00:00.0结束</view>
+                </view>
+                <button>去拼单</button>
+              </view>
+            </swiper-item>
+            <swiper-item class='scrollitem'>
+              <view class='user'>
+                <view class='image'>头像</view>
+                <view class='name'>名字</view>
+              </view>
+              <view class='settlement'>
+                <view class='discrepancy'>
+                  <view class='peopleNum'>差3人拼成</view>
+                  <view class='time'>剩余00:00:00:00.0结束</view>
+                </view>
+                <button>去拼单</button>
+              </view>
+            </swiper-item>
+          </swiper>
+        </view>
+      </view>
+      <!-- 拼团部分结束 -->
+      <view class='empty'></view>
+      <!-- 评论部分开始 -->
+      <view class='appraise'>
+        <view class='appraiseTitle'>
+          <text>商品评价（8823）</text>
+          <text class='more'>查看更多<view class='arrow'> > </view></text>
+        </view>
+        <view class='appraiseNav'>
+          <text class='nav'>便宜<text class='num'>(126)</text></text>
+          <text class='nav'>质量好<text class='num'>(111)</text></text> 
+          <text class='nav'>软硬度好<text class='num'>(52)</text></text>
+          <text class='nav'>服务态度好<text class='num'>(46)</text></text>
+          <text class='nav'>枕着很舒服<text class='num'>(46)</text></text>
+        </view>
+        <view class='appraiseItem'>
+          <view class='appraiseUser'>
+            <view class='image'>头像</view>
+            <view class='name'>名字</view>
+          </view>
+          <view class='appriaseContent'>
+            <view class='appriaseText'>
+              商品质量特别的好晚上睡觉用它-夜到天亮，睡得很踏
+              实没有异味收到货，柔软度还是不错的，枕头本身的
+              味道是很自然的味道。
+            </view>
+            <view class='appriaseImage'>
+              <text>图片1</text>
+              <text>图片2</text>
+              <text>图片3</text> 
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 评论部分结束 -->
+      <view class='empty'></view>
+      <!-- 商品详情开始 -->
+      <view class='goodsDetail'>
+        <view class='detailTitle'>商品详情</view>
+        <view class='detailGoods'>
+          <view class='goods'>
+            <view class='goodsImg'>aaa</view>
+            <view class='goodsMsg'>
+              <view class='goodsTitle'>商品</view>
+              <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
+            </view>
+          </view>
+          <view class='goods'>
+            <view class='goodsImg'>aaa</view>
+            <view class='goodsMsg'>
+              <view class='goodsTitle'>商品</view>
+              <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
+            </view>
+          </view>
+          <view class='goods'>
+            <view class='goodsImg'>aaa</view>
+            <view class='goodsMsg'>
+              <view class='goodsTitle'>商品</view>
+              <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
+            </view>
+          </view>
+          <view class='goods'>
+            <view class='goodsImg'>aaa</view>
+            <view class='goodsMsg'>
+              <view class='goodsTitle'>商品</view>
+              <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
+            </view>
+          </view>
+          <view class='goods'>
+            <view class='goodsImg'>aaa</view>
+            <view class='goodsMsg'>
+              <view class='goodsTitle'>商品</view>
+              <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
+            </view>
+          </view>
+          <view class='goods'>
+            <view class='goodsImg'>aaa</view>
+            <view class='goodsMsg'>
+              <view class='goodsTitle'>商品</view>
+              <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
+            </view>
+          </view>
+        </view>
+      </view>
+      <!-- 商品详情结束 -->
+      <!-- 详情底部开始 -->
       <view>
-        <text class='arrow'></text>
+        <van-goods-action>
+          <van-goods-action-icon
+            icon="wap-home"
+            text="首页"
+            bind:click="onClickIcon"
+          />
+          <van-goods-action-icon
+            icon="star-o"
+            text="收藏"
+            bind:click="onClickIcon"
+          />
+          <van-goods-action-icon
+            icon="service-o"
+            text="客服"
+            bind:click="onClickIcon"
+          />
+          <van-goods-action-button
+            text="发起拼单"
+            type="warning"
+            bind:click="onClickButton"
+            data-index="0"
+          />
+          <van-goods-action-button
+            text="单独购买"
+            bind:click="onClickButton"
+            data-index="1"
+          />
+        </van-goods-action>
       </view>
-    </view>
-  </view>
-  <view class='model3'>
-    <view class='collageTitle'>
-      <text>4人在拼单，可直接参与</text>
-    </view>
-    <view class='success'>
-        <view class='image'>头像</view>
-        <view class='name'>名字</view>
-        <view class='successTime'>24分钟前拼单成功</view>
-    </view>
-    <view class='collageBox'>
-      <swiper autoplay='true' circular='true' class='collageBoxItem' vertical='true' display-multiple-items='1'>
-        <swiper-item class='scrollitem'>
-          <view class='user'>
-            <view class='image'>头像</view>
-            <view class='name'>名字</view>
-          </view>
-          <view class='settlement'>
-            <view class='discrepancy'>
-              <view class='peopleNum'>差3人拼成</view>
-              <view class='time'>剩余00:00:00:00.0结束</view>
+      <van-popup
+      show="{{ show }}"
+      position="bottom"
+      overlay="{{ true }}"
+      custom-style='overflow:none'
+      class='add'
+    >
+        <view class='addgoods'>
+          <view class='addgoodsBox'>
+            <view class='marque'>
+              <view class='addgoodsMsg'>
+                <image src="{{data.goods_thumb}}" class='addGoodsImg'></image>
+                <view class='addGoodsPrice'>
+                  <view class='Price'>￥<text>{{data.shop_price}}</text></view>
+                  <view class='num'>库存2343件</view>
+                  <view class='checksize'>请选择 尺码</view>
+                </view>
+              </view>
+              <van-icon name="close"  class='close' bindtap='onClose'/>
             </view>
-            <button>去拼单</button>
-          </view>
-        </swiper-item>
-        <swiper-item class='scrollitem'>
-          <view class='user'>
-            <view class='image'>头像</view>
-            <view class='name'>名字</view>
-          </view>
-          <view class='settlement'>
-            <view class='discrepancy'>
-              <view class='peopleNum'>差3人拼成</view>
-              <view class='time'>剩余00:00:00:00.0结束</view>
+            <view class='size'>
+              <view class='title'>尺码</view>
+              <view><text class='{{curSize===index?"active":""}}' wx:for="{{size}}" data-size="{{index}}">{{item}}</text></view>
             </view>
-            <button>去拼单</button> 
-          </view>
-        </swiper-item>
-        <swiper-item class='scrollitem'>
-          <view class='user'>
-            <view class='image'>头像</view>
-            <view class='name'>名字</view>
-          </view>
-          <view class='settlement'>
-            <view class='discrepancy'>
-              <view class='peopleNum'>差3人拼成</view>
-              <view class='time'>剩余00:00:00:00.0结束</view>
+            <view class='moreMarque'>
+              <view class='title'>颜色</view>
+              <view><text class='{{curColor===index?"active":""}}' wx:for="{{color}}" data-color="{{index}}">{{item}}</text></view>
             </view>
-            <button>去拼单</button>
-          </view>
-        </swiper-item>
-        <swiper-item class='scrollitem'>
-          <view class='user'>
-            <view class='image'>头像</view>
-            <view class='name'>名字</view>
-          </view>
-          <view class='settlement'>
-            <view class='discrepancy'>
-              <view class='peopleNum'>差3人拼成</view>
-              <view class='time'>剩余00:00:00:00.0结束</view>
+            <view class='moreCount'>
+              <text class='count'>数量</text>
+              <view class='number'>
+                <view class='add' bindtap="add" data-index="{{index}}">+</view>
+                  <input  bindinput="bindKeyInput" placeholder="{{num}}" disabled="true"/>
+                  <view class='remove' bindtap="even" data-index="{{index}}">-</view>
+                </view>
             </view>
-            <button>去拼单</button>
+            <button bindtap='goPay' data-dataList="{{data}}" data-id="{{data.goods_id}}" data-price="{{totalPrice}}">确定</button>
           </view>
-        </swiper-item>
-      </swiper>
+        </view>
+      </van-popup>
+      <!-- 详情底部结束 -->
     </view>
-  </view>
-  <view class='appraise'>
-    <view class='appraiseTitle'>
-      <text>商品评价（8823）</text>
-      <text class='more'>查看更多<text class='arrow'></text></text>
-    </view>
-    <view class='appraiseNav'>
-      <text class='nav'>便宜<text class='num'>(126)</text></text>
-      <text class='nav'>质量好<text class='num'>(111)</text></text> 
-      <text class='nav'>软硬度好<text class='num'>(52)</text></text>
-      <text class='nav'>服务态度好<text class='num'>(46)</text></text>
-      <text class='nav'>枕着很舒服<text class='num'>(46)</text></text>
-    </view>
-    <view class='appraiseItem'>
-      <view class='appraiseUser'>
-         <view class='image'>头像</view>
-        <view class='name'>名字</view>
-      </view>
-      <view class='appriaseContent'>
-        <view class='appriaseText'>
-          商品质量特别的好晚上睡觉用它-夜到天亮，睡得很踏
-          实没有异味收到货，柔软度还是不错的，枕头本身的
-          味道是很自然的味道。
-        </view>
-        <view class='appriaseImage'>
-          <text>图片1</text>
-          <text>图片2</text>
-          <text>图片3</text> 
-        </view>
-      </view>
-    </view>
-    <view class='appraiseMore'>查看更多<text class='arrow'></text></view>
-  </view>
-  <view class='goodsDetail'>
-    <view class='detailTitle'>商品详情</view>
-    <view class='detailGoods'>
-      <view class='goods'>
-        <view class='goodsImg'>aaa</view>
-        <view class='goodsMsg'>
-          <view class='goodsTitle'>商品</view>
-          <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
-        </view>
-      </view>
-      <view class='goods'>
-        <view class='goodsImg'>aaa</view>
-        <view class='goodsMsg'>
-          <view class='goodsTitle'>商品</view>
-          <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
-        </view>
-      </view>
-      <view class='goods'>
-        <view class='goodsImg'>aaa</view>
-        <view class='goodsMsg'>
-          <view class='goodsTitle'>商品</view>
-          <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
-        </view>
-      </view>
-      <view class='goods'>
-        <view class='goodsImg'>aaa</view>
-        <view class='goodsMsg'>
-          <view class='goodsTitle'>商品</view>
-          <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
-        </view>
-      </view>
-      <view class='goods'>
-        <view class='goodsImg'>aaa</view>
-        <view class='goodsMsg'>
-          <view class='goodsTitle'>商品</view>
-          <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
-        </view>
-      </view>
-      <view class='goods'>
-        <view class='goodsImg'>aaa</view>
-        <view class='goodsMsg'>
-          <view class='goodsTitle'>商品</view>
-          <view class='goodsShop'><text class='goodsIcon'>图标</text><text class='goodsPrice'>￥<text class='num'>228     </text>.00</text><button>立即购买<text class='shopIcon'></text></button></view> 
-        </view>
-      </view>
-    </view>
-  </view>
-  <view class='goodsDetailImgBox'>
-    详情图片
-  </view>
-  <view class='bottomNav'>
-    <van-goods-action>
-      <van-goods-action-icon
-        icon="wap-home"
-        text="首页"
-        bind:click="onClickIcon"
-      />
-      <van-goods-action-icon
-        icon="star-o"
-        text="收藏"
-        bind:click="onClickIcon"
-      />
-      <van-goods-action-icon
-        icon="service-o"
-        text="客服"
-        bind:click="onClickIcon"
-      />
-      <van-goods-action-button
-        text="发起拼单"
-        type="warning"
-        bind:click="onClickButton"
-      />
-      <van-goods-action-button
-        text="单独购买"
-        bind:click="onClickButton"
-      />
-    </van-goods-action>
-  </view>
-  <van-popup
-  show="{{ show }}"
-  position="bottom"
-  overlay="{{ true }}"
-  custom-style='overflow:none'
-  class='add'
->
-    <view class='addgoods'>
-      <view class='addgoodsBox'>
-        <view class='marque'>
-          <view class='addgoodsMsg'>
-            <view class='addGoodsImg'>商品图</view>
-            <view class='addGoodsPrice'>
-              <view class='Price'>￥<text>122-133</text></view>
-              <view class='num'>库存2343件</view>
-              <view class='checksize'>请选择 尺码</view>
-            </view>
-          </view>
-          <van-icon name="close"  class='close' bindtap='close'/>
-        </view>
-        <view class='size'>
-          <view class='title'>尺码</view>
-          <view><text class='checkItem'>60*40cm</text> <text class='checkItem'>58*36cm</text></view>
-        </view>
-        <view class='moreMarque'>
-          <view class='title'>颜色</view>
-          <view><text class='checkItem'>白色</text> </view>
-        </view>
-        <button bindtap='goCart'>确定</button>
-      </view>
-    </view>
-  </van-popup>
+
+  </scroll-view>
 </view>
+
